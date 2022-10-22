@@ -1,52 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="/styles/styles.css">
-  <script type="module" src="./javascript/index.js"></script>
-  <script
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <script type="module" src="./javascript/index.js"></script>
+    <script
       src="https://kit.fontawesome.com/8bb946769b.js"
       crossorigin="anonymous"
     ></script>
-</head>
-<body>
-    <main>
-      <div class="hero-container">
-        <div class="wrapper">
+  </head>
+
+  <body>
+    <aside class="sidebar-mobile">
+      <ul class="sidebar-mobile__list">
+        <li>
+          <a class="sidebar-mobile__item active-link" href="/"><i class="fa-solid fa-house"></i> Home</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item" href="/pages/book.html"><i class="fa-solid fa-code"></i> Skills</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item" href="#"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item" href="/pages/about.html"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item" href="#"><i class="fa-brands fa-facebook"></i> Facbook</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item" href="#"><i class="fa-brands fa-github"></i> Github</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item" href="#"><i class="fa-solid fa-address-card"></i> Contact</a>
+        </li>
+      </ul>
+    </aside>
+
+    <div class="hero-container">
+      <div class="wrapper">
+        <!-- <nav class="nav">
+          <aside>
+            <a href="#">Logo</a>
+          </aside>
+          <section class="links">
+            <a href="#">Home</a>
+            <a href="#">Skills</a>
+            <a href="#">Projects</a>
+            <article class="socials">
+              <a href="#">LinkedIn Logo</a>
+              <a href="#">Facebook</a>
+              <a href="#">Github</a>
+            </article>
+          </section>
+          <button>Let's Connect</button>
+        </nav> -->
+        <!-- Navigation for PC & Mobile -->
+        <nav class="nav">
+          <section class="nav__mobile">
+            <img
+              class="nav__img"
+              src="./assets/images/logo.svg"
+              alt="logo"
+            />
+            <aside class="nav__hamburger">
+              <i class="nav__hamburger-icon fa-solid fa-bars"></i>
+              <i class="nav__hamburger-close fa-solid fa-xmark"></i>
+            </aside>
+          </section>
+
+          <section class="nav__desktop">
+            <aside>
+              <a href="#">Logo</a>
+            </aside>
+            <section class="links">
+              <a href="#">Home</a>
+              <a href="#">Skills</a>
+              <a href="#">Projects</a>
+              <article class="socials">
+                <a href="#">LinkedIn Logo</a>
+                <a href="#">Facebook</a>
+                <a href="#">Github</a>
+              </article>
+            </section>
+            <button>Let's Connect</button>
+          </section>
+        </nav>
+
+        <main>
           <section class="hero">
             <section class="hero__left">
               <section class="hero__heading-background">
                 <h2 class="hero__heading">Hi, I'm Renas!</h2>
               </section>
               <div id="typed-strings">
-                <p>A <span class="hero__fullstack">Fullstack</span> Web Developer</p>
-                <p>A <span class="hero__frontend">Frontend</span> Web Developer</p>
-                <p>A <span class="hero__backend">Backend</span> Web Developer</p>
+                <p>
+                  A <span class="hero__fullstack">Fullstack</span> Web Developer
+                </p>
+                <p>
+                  A <span class="hero__frontend">Frontend</span> Web Developer
+                </p>
+                <p>
+                  A <span class="hero__backend">Backend</span> Web Developer
+                </p>
                 <p>Your <span class="hero__next">Next</span> Colleague</p>
               </div>
               <div class="typed-container prevent-select">
                 <span id="typed"></span>
               </div>
-              <p class="hero__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ullam, consectetur voluptates, nulla aspernatur voluptatibus totam id saepe necessitatibus quo soluta officiis libero illum amet.</p>
-              <button class="button hero__button">Let's Connect <i class="fa-solid fa-arrow-right"></i></button>
+              <p class="hero__paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus, ullam, consectetur voluptates, nulla aspernatur
+                voluptatibus totam id saepe necessitatibus quo soluta officiis
+                libero illum amet.
+              </p>
+              <button class="button hero__button">
+                Let's Connect <i class="fa-solid fa-arrow-right"></i>
+              </button>
             </section>
             <article class="hero__right">
-              <!-- <object
-                type="image/svg+xml"
-                data="/assets/images/cat-astronaut-animate-no-bg.svg"
-              > -->
-              <img class="hero__astronaut" src="./assets/images/header-img.svg" alt="">
+              <img
+                class="hero__astronaut"
+                src="./assets/images/header-img.svg"
+                alt=""
+              />
             </article>
           </section>
-        </div>
-      </section>
-  
-    </main>
+        </main>
+      </div>
+    </div>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </body>
 </html>
