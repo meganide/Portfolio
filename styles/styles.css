@@ -318,6 +318,11 @@ img {
 
 }
 
+/* *******Projects***** */
+
+.projects {
+  min-height: 100vh;
+}
 
 
 /* ********SKILLS*********** */
