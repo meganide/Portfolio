@@ -1,7 +1,26 @@
+/************ Custom Font ************/
 @font-face {
   font-family: QuirkyRobot;
-  src: url("../assets/fonts/QuirkyRobot.ttf");
+  src: url("../assets/fonts/QuirkyRobot/QuirkyRobot.ttf");
 }
+
+@font-face {
+	font-family: Centra;
+	src: url('../assets/fonts/Centra/CentraNo2-Bold.ttf');
+	font-weight: 700;
+}
+@font-face {
+	font-family: Centra;
+	src: url('../assets/fonts/Centra/CentraNo2-Medium.ttf');
+	font-weight: 500;
+}
+@font-face {
+	font-family: Centra;
+	src: url('../assets/fonts/Centra/CentraNo2-Book.ttf');
+	font-weight: 400;
+}
+
+
 
 
 :root {
@@ -15,9 +34,7 @@
 *::before {
   box-sizing: border-box;
   margin: 0;
-  color: white;
-  font-family: 'QuirkyRobot', sans-serif;
-  font-weight: normal;
+  padding: 0;
 }
 
 body {
@@ -25,6 +42,9 @@ body {
   width: 100vw;
   min-height: 100vh;
   max-width: 100%;
+  color: white;
+  font-family: 'Centra', sans-serif;
+  font-weight: 400;
 }
 
 h1,
@@ -33,6 +53,19 @@ h3,
 h4 {
   color: white;
   font-size: 3rem;
+  font-family: 'QuirkyRobot', sans-serif;
+  font-weight: normal;
+}
+
+p {
+  font-size: 1.2rem;
+  color: rgb(211, 211, 211);
+  line-height: 1.7;
+}
+
+img{
+  width: 100%;
+  height: auto;
 }
 
 .prevent-select {
@@ -45,6 +78,8 @@ h4 {
   max-width: var(--page-size);
   margin: 0 auto;
 }
+
+/********************* HERO *********************/
 
 .hero-container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url("../assets/images/space-bg.jpg");
@@ -71,20 +106,68 @@ h4 {
   margin-bottom: 2rem;
 }
 
+
 #typed {
   font-size: 3rem;
+  font-family: 'QuirkyRobot', sans-serif;
 }
 
 #typed span {
-  color: var(--primary-color);
   font-weight: bold;
+  font-family: 'QuirkyRobot', sans-serif;
 }
+
+
+#typed .hero__fullstack {
+  color: var(--primary-color);
+}
+
+#typed .hero__frontend {
+  color: #57df79;
+}
+
+#typed .hero__backend {
+  color: #4aa9d1;
+}
+
+#typed .hero__next {
+  color: #E7B43A;
+}
+
+
 
 .typed-cursor {
   font-size: 1.8rem;
+  font-family: 'QuirkyRobot', sans-serif;
+
 }
 
 .hero__right {
   flex: 1;
   opacity: 90%;
 }
+
+.hero__astronaut {
+  height: 500px;
+  animation: zoomIn 1s ease-in-out forwards, updown 3s linear 1s infinite alternate;
+}
+
+@keyframes zoomIn {
+  0%{
+    transform:scale(0)
+  }
+  100% {
+    transform:scale(1)
+  }
+}
+
+@keyframes updown {
+  0%{
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(40px);
+  }
+
+}
+
