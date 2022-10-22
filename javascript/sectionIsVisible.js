@@ -3,7 +3,7 @@ let currentlyActiveLink = 'hero';
 
 function isElementInViewport(element) {
   let rect = element.getBoundingClientRect();
-  let isTopInViewPort = rect.top <= rect.height / 2;
+  let isTopInViewPort = rect.top <= rect.height / 2 && rect.bottom > 0;
   // check if element is completely visible inside the viewport
   return isTopInViewPort;
 }
