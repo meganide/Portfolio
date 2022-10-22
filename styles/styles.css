@@ -1,0 +1,90 @@
+@font-face {
+  font-family: QuirkyRobot;
+  src: url("../assets/fonts/QuirkyRobot.ttf");
+}
+
+
+:root {
+  --main-background: #121516;
+  --page-size: 1200px;
+  --primary-color: #a527d6;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  color: white;
+  font-family: 'QuirkyRobot', sans-serif;
+  font-weight: normal;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #121516, #16191a, #191d1e, #1c2123, #1f2527);
+  width: 100vw;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: white;
+  font-size: 3rem;
+}
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.wrapper {
+  max-width: var(--page-size);
+  margin: 0 auto;
+}
+
+.hero-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url("../assets/images/space-bg.jpg");
+  height: 100vh;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__left {
+  flex: 1;
+}
+
+.hero__heading-background {
+  background-image: linear-gradient(to right, #c785d2af, #a66fc0bb, #855aaeb0, #65479d, #40358b);
+  width: fit-content;
+  padding: 0.6rem 1.5rem 0 1.5rem;
+  border-radius: .125rem;
+  border: 1px solid gray;
+  margin-bottom: 2rem;
+}
+
+#typed {
+  font-size: 3rem;
+}
+
+#typed span {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.typed-cursor {
+  font-size: 1.8rem;
+}
+
+.hero__right {
+  flex: 1;
+  opacity: 90%;
+}
