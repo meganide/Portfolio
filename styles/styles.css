@@ -212,6 +212,7 @@ img {
 
 .hero {
   padding: 0 var(--padding);
+  padding-bottom: 6rem;
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
@@ -322,7 +323,10 @@ img {
 
 /* ********SKILLS*********** */
 .container-skills {
-  background-color: var(--main-background);
+  /* background-color: var(--main-background); */
+  background-image: linear-gradient(to bottom, #0d0514, #110519, #15051d, #190521, #1c0525);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .skills {
