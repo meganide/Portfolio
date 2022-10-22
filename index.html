@@ -7,12 +7,16 @@
   <title>Portfolio</title>
   <link rel="stylesheet" href="/styles/styles.css">
   <script type="module" src="./javascript/index.js"></script>
+  <script
+      src="https://kit.fontawesome.com/8bb946769b.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body>
     <main>
       <div class="hero-container">
         <div class="wrapper">
-          <section class="hero prevent-select">
+          <section class="hero">
             <section class="hero__left">
               <section class="hero__heading-background">
                 <h2 class="hero__heading">Hi, I'm Renas!</h2>
@@ -23,9 +27,11 @@
                 <p>A <span class="hero__backend">Backend</span> Web Developer</p>
                 <p>Your <span class="hero__next">Next</span> Colleague</p>
               </div>
-              <span id="typed"></span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ullam, consectetur voluptates, nulla aspernatur voluptatibus totam id saepe necessitatibus quo soluta officiis libero illum amet.</p>
-              <button>Let's Connect!</button>
+              <div class="typed-container prevent-select">
+                <span id="typed"></span>
+              </div>
+              <p class="hero__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ullam, consectetur voluptates, nulla aspernatur voluptatibus totam id saepe necessitatibus quo soluta officiis libero illum amet.</p>
+              <button class="button hero__button">Let's Connect <i class="fa-solid fa-arrow-right"></i></button>
             </section>
             <article class="hero__right">
               <!-- <object

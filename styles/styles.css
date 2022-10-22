@@ -21,12 +21,16 @@
 }
 
 
-
+/* **********General****** */
 
 :root {
   --main-background: #121516;
-  --page-size: 1200px;
+  --page-size: 1100px;
   --primary-color: #a527d6;
+  --secondary-color: #57df79;
+  --tertiary-color: #4aa9d1;
+  --fourth-color: #E7B43A;
+  --padding: .9375rem;
 }
 
 *,
@@ -57,10 +61,15 @@ h4 {
   font-weight: normal;
 }
 
+button {
+  font-family: 'Centra', sans-serif;
+  font-weight: 700;
+}
+
 p {
-  font-size: 1.2rem;
-  color: rgb(211, 211, 211);
-  line-height: 1.7;
+  font-size: 1rem;
+  color: rgb(184, 184, 184);
+  line-height: 1.8;
 }
 
 img{
@@ -79,22 +88,41 @@ img{
   margin: 0 auto;
 }
 
+/* **********UTILS******** */
+.button {
+  padding: 1rem;
+  font-size: 1.125rem;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #e7b43a, #ecbc4b, #f0c45b, #f5cc6a, #f9d479);  text-shadow: white 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #ffb300;
+}
+
 /********************* HERO *********************/
 
 .hero-container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url("../assets/images/space-bg.jpg");
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .hero {
+  padding: 0 var(--padding);
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
 }
 
 .hero__left {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+  align-items: center;
+  text-align: center;
 }
 
 .hero__heading-background {
@@ -106,6 +134,9 @@ img{
   margin-bottom: 2rem;
 }
 
+.typed-container {
+  height: 100px;
+}
 
 #typed {
   font-size: 3rem;
@@ -123,32 +154,45 @@ img{
 }
 
 #typed .hero__frontend {
-  color: #57df79;
+  color: var(--secondary-color);
 }
 
 #typed .hero__backend {
-  color: #4aa9d1;
+  color: var(--tertiary-color);
 }
 
 #typed .hero__next {
-  color: #E7B43A;
+  color: var(--fourth-color);
 }
-
-
 
 .typed-cursor {
   font-size: 1.8rem;
   font-family: 'QuirkyRobot', sans-serif;
+}
 
+.hero__paragraph {
+  margin: 1rem 0 2rem 0;
+  max-width: 430px;
+}
+
+.hero__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .9375rem;
 }
 
 .hero__right {
   flex: 1;
   opacity: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero__astronaut {
-  height: 500px;
+  padding: 4rem 0;
+  max-width: 350px;
   animation: zoomIn 1s ease-in-out forwards, updown 3s linear 1s infinite alternate;
 }
 
@@ -171,3 +215,38 @@ img{
 
 }
 
+@media screen and (min-width: 500px) {
+  .typed-container {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 0 3rem !important;
+    flex-direction: row;
+    padding: 0;
+    justify-content: flex-end;
+  }
+
+  .hero__left {
+    min-width: 460px;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .hero__paragraph {
+    margin-top: 0;
+  }
+
+  .hero__astronaut {
+    max-width: 80%;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 0 !important;
+  }
+}
