@@ -24,6 +24,10 @@
 
 
 /* **********General****** */
+html {
+  scroll-behavior: smooth;
+
+}
 
 :root {
   --main-background: #0D0514;
@@ -111,7 +115,7 @@ img {
 
 /* ------ Navigation ------ */
 .nav {
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 2;
@@ -155,7 +159,7 @@ img {
   width: 60%;
   z-index: 10;
   background-color: var(--main-background);
-  color: white;
+  color: rgb(184, 184, 184);
   transform: translateX(100%);
   transition: transform 0.2s ease-in-out;
 }
@@ -180,6 +184,7 @@ img {
 
 .sidebar-mobile__item:hover {
   background-color: #1a0e24;
+  color: white;
 }
 
 .sidebar-mobile__item i {
@@ -307,30 +312,105 @@ img {
 
 }
 
+
+
+/* ********SKILLS*********** */
+.skills {
+  height: 100vh;
+  background-color: var(--main-background);
+}
+
+
+
+
+
+
+
 @media screen and (min-width: 500px) {
   .typed-container {
     height: auto;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 880px) {
+  .wrapper {
+    padding: 0 2rem;
+  }
+
 
   /* ------ NAV -------- */
   .nav__mobile {
     display: none;
   }
-  
+
   .nav__desktop {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
   }
+
+  .nav__desktop-links a,
+  .nav__desktop-socials a {
+    text-decoration: none;
+    color: rgb(184, 184, 184);
+  }
+
+  .nav__desktop-links a:hover,
+  .nav__desktop-socials a:hover {
+    color: white;
+  }
+
   .nav__logo {
     padding: 0.625rem 0;
   }
 
+  .nav__desktop-links {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+
+  .nav__desktop-links a {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .active-link {
+    border-bottom: 1px solid rgb(184, 184, 184);
+  }
+
+  .nav__desktop-socials {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  .button--secondary {
+    background-color: transparent;
+    background-image: none;
+    color: white;
+    border: 1px solid rgb(184, 184, 184);
+    padding: 1rem;
+  }
+
+  .button--secondary:hover {
+    color: black;
+  }
+
   /* *****HERO******* */
 
+  .hero-container {
+    padding-top: 9rem;
+    background-attachment: fixed;
+
+  }
+
   .hero {
-    padding: 0 3rem !important;
+    /* padding: 0 3rem !important; */
     flex-direction: row;
     padding: 0;
     justify-content: flex-end;
@@ -353,7 +433,22 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .wrapper {
+    padding: 0;
+  }
+
+  .hero-container {
+    padding-top: 5rem;
+  }
+
   .hero {
     padding: 0 !important;
+  }
+}
+
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }

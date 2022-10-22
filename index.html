@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Renas Hassan - Portfolio</title>
+    <link rel="shortcut icon" href="./assets/images/logo.svg" />
     <link rel="stylesheet" href="/styles/styles.css" />
     <script type="module" src="./javascript/index.js"></script>
     <script
@@ -14,86 +15,87 @@
   </head>
 
   <body>
+    <nav class="nav">
+      <div class="wrapper">
+        <section class="nav__mobile">
+          <a href="#hero"
+            ><img class="nav__img" src="./assets/images/logo.svg" alt="logo"
+          /></a>
+          <aside class="nav__hamburger">
+            <i class="nav__hamburger-icon fa-solid fa-bars"></i>
+            <i class="nav__hamburger-close fa-solid fa-xmark"></i>
+          </aside>
+        </section>
+
+        <section class="nav__desktop">
+          <aside>
+            <a href="#hero"
+              ><img class="nav__img" src="./assets/images/logo.svg" alt="logo"
+            /></a>
+          </aside>
+          <section class="nav__desktop-links">
+            <a class="active-link" href="#hero"
+              ><i class="fa-solid fa-house"></i> Home</a
+            >
+            <a href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
+            <a href="#projects"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+          </section>
+          <article class="nav__desktop-socials">
+            <a href="https://se.linkedin.com/in/renas-hassan-9b248b186"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/Renash97"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://github.com/meganide"><i class="fa-brands fa-github"></i></a>
+          </article>
+          <a href="#contact"><button class="button button--secondary">Let's Connect</button></a>
+        </section>
+      </div>
+    </nav>
+
     <aside class="sidebar-mobile">
       <ul class="sidebar-mobile__list">
         <li>
-          <a class="sidebar-mobile__item active-link" href="/"><i class="fa-solid fa-house"></i> Home</a>
+          <a class="sidebar-mobile__item active-link" href="#hero"
+            ><i class="fa-solid fa-house"></i> Home</a
+          >
         </li>
         <li>
-          <a class="sidebar-mobile__item" href="/pages/book.html"><i class="fa-solid fa-code"></i> Skills</a>
+          <a class="sidebar-mobile__item" href="#skills"
+            ><i class="fa-solid fa-code"></i> Skills</a
+          >
         </li>
         <li>
-          <a class="sidebar-mobile__item" href="#"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+          <a class="sidebar-mobile__item" href="#projects"
+            ><i class="fa-solid fa-diagram-project"></i> Projects</a
+          >
         </li>
         <li>
-          <a class="sidebar-mobile__item" href="/pages/about.html"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+          <a class="sidebar-mobile__item" href="https://se.linkedin.com/in/renas-hassan-9b248b186"
+            ><i class="fa-brands fa-linkedin"></i>LinkedIn</a
+          >
         </li>
         <li>
-          <a class="sidebar-mobile__item" href="#"><i class="fa-brands fa-facebook"></i> Facbook</a>
+          <a class="sidebar-mobile__item" href="https://www.facebook.com/Renash97"
+            ><i class="fa-brands fa-facebook"></i> Facebook</a
+          >
         </li>
         <li>
-          <a class="sidebar-mobile__item" href="#"><i class="fa-brands fa-github"></i> Github</a>
+          <a class="sidebar-mobile__item" href="https://github.com/meganide"
+            ><i class="fa-brands fa-github"></i> Github</a
+          >
         </li>
         <li>
-          <a class="sidebar-mobile__item" href="#"><i class="fa-solid fa-address-card"></i> Contact</a>
+          <a class="sidebar-mobile__item" href="#contact"
+            ><i class="fa-solid fa-address-card"></i> Contact</a
+          >
         </li>
       </ul>
     </aside>
 
-    <div class="hero-container">
-      <div class="wrapper">
-        <!-- <nav class="nav">
-          <aside>
-            <a href="#">Logo</a>
-          </aside>
-          <section class="links">
-            <a href="#">Home</a>
-            <a href="#">Skills</a>
-            <a href="#">Projects</a>
-            <article class="socials">
-              <a href="#">LinkedIn Logo</a>
-              <a href="#">Facebook</a>
-              <a href="#">Github</a>
-            </article>
-          </section>
-          <button>Let's Connect</button>
-        </nav> -->
-        <!-- Navigation for PC & Mobile -->
-        <nav class="nav">
-          <section class="nav__mobile">
-            <img
-              class="nav__img"
-              src="./assets/images/logo.svg"
-              alt="logo"
-            />
-            <aside class="nav__hamburger">
-              <i class="nav__hamburger-icon fa-solid fa-bars"></i>
-              <i class="nav__hamburger-close fa-solid fa-xmark"></i>
-            </aside>
-          </section>
-
-          <section class="nav__desktop">
-            <aside>
-              <a href="#">Logo</a>
-            </aside>
-            <section class="links">
-              <a href="#">Home</a>
-              <a href="#">Skills</a>
-              <a href="#">Projects</a>
-              <article class="socials">
-                <a href="#">LinkedIn Logo</a>
-                <a href="#">Facebook</a>
-                <a href="#">Github</a>
-              </article>
-            </section>
-            <button>Let's Connect</button>
-          </section>
-        </nav>
-
-        <main>
+    <main>
+      <div class="hero-container" id="hero">
+        <div class="wrapper">
           <section class="hero">
             <section class="hero__left">
-              <section class="hero__heading-background">
+              <section class="hero__heading-background prevent-select">
                 <h2 class="hero__heading">Hi, I'm Renas!</h2>
               </section>
               <div id="typed-strings">
@@ -129,9 +131,11 @@
               />
             </article>
           </section>
-        </main>
+        </div>
       </div>
-    </div>
+
+      <section class="skills" id="skills"></section>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </body>
