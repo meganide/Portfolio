@@ -365,6 +365,15 @@ img {
 .projects {
   min-height: 100vh;
   padding: 5rem var(--padding);
+  padding-bottom: 0;
+}
+
+.projects__project {
+  padding-bottom: 5rem;
+}
+
+.projects__project--enginers {
+  padding-bottom: 2rem;
 }
 
 .projects__laptop-mockup {
