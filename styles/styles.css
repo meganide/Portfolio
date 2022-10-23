@@ -83,11 +83,8 @@ h2 {
   margin: 0 auto;
   margin-bottom: 24px;
   font-size: 4rem;
-  background-image: linear-gradient(to right, #c785d2af, #a66fc0bb, #855aaeb0, #65479d, #40358b);
-  width: fit-content;
-  padding: 1.5rem 2rem 0.5rem 2rem;
-  border-radius: 2px;
-  border: .0625rem solid gray;
+  font-weight: 700;
+  text-align: center;
 }
 
 button {
@@ -227,12 +224,19 @@ img {
 
 
 /********************* HERO *********************/
-
-.hero-container {
+body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url("../assets/images/space-bg2.webp");
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero-container {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url("../assets/images/space-bg2.webp"); */
+  min-height: 100vh;
+  /* background-repeat: no-repeat;
+  background-size: cover; */
 }
 
 .hero {
@@ -353,7 +357,7 @@ img {
 /* *******Projects***** */
 .container-projects {
   /* background-color: var(--main-background); */
-  background-image: linear-gradient(to bottom, #0d0514, #110519, #15051d, #190521, #1c0525);
+  /* background-image: linear-gradient(to bottom, #0d0514, #110519, #15051d, #190521, #1c0525); */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -414,11 +418,12 @@ img {
 .projects__technologies {
   margin-top: 1rem;
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   border-radius: .3125rem;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  background-color: rgb(255, 255, 255);
 }
 
 .projects__icon {
@@ -437,7 +442,7 @@ img {
 /* ********SKILLS*********** */
 .container-skills {
   /* background-color: var(--main-background); */
-  background-image: linear-gradient(to bottom, #0d0514, #110519, #15051d, #190521, #1c0525);
+  /* background-image: linear-gradient(to bottom, #0d0514, #110519, #15051d, #190521, #1c0525); */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -468,6 +473,10 @@ img {
 
 
 @media screen and (min-width: 31.25rem) {
+  h2 {
+    font-size: 6rem;
+  }
+  
   .typed-container {
     height: auto;
   }
