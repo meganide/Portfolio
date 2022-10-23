@@ -2,25 +2,37 @@
 @font-face {
   font-family: QuirkyRobot;
   src: url("../assets/fonts/QuirkyRobot/QuirkyRobot.ttf");
+  font-display: fallback;
 }
 
 @font-face {
   font-family: Centra;
-  src: url('../assets/fonts/Centra/CentraNo2-Bold.ttf');
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: Centra;
-  src: url('../assets/fonts/Centra/CentraNo2-Medium.ttf');
+  src: url('../assets/fonts/Centra/CentraNo2-Medium.woff2') format('woff2'),
+    url('../assets/fonts/Centra/CentraNo2-Medium.woff') format('woff');
   font-weight: 500;
+  font-display: fallback;
+  font-style: normal;
+}
+
+font-face {
+  font-family: Centra;
+  src: url('../assets/fonts/Centra/CentraNo2-Bold.woff2') format('woff2'),
+    url('../assets/fonts/Centra/CentraNo2-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
 }
 
 @font-face {
   font-family: Centra;
-  src: url('../assets/fonts/Centra/CentraNo2-Book.ttf');
+  src: url('../assets/fonts/Centra/CentraNo2-Book.woff2') format('woff2'),
+    url('../assets/fonts/Centra/CentraNo2-Book.woff') format('woff');
   font-weight: 400;
+  font-display: fallback;
+  font-style: normal;
 }
+
+
 
 
 /* **********General****** */
@@ -31,12 +43,12 @@ html {
 
 :root {
   --main-background: #0D0514;
-  --page-size: 1100px;
+  --page-size: 68.75rem;
   --primary-color: #a527d6;
   --secondary-color: #57df79;
   --tertiary-color: #4aa9d1;
   --fourth-color: #E7B43A;
-  --padding: .9375rem;
+  --padding: 15px;
 }
 
 *,
@@ -62,13 +74,14 @@ h2,
 h3,
 h4 {
   color: white;
-  font-size: 3rem;
+  font-size: 48px;
   font-family: 'QuirkyRobot', sans-serif;
   font-weight: normal;
 }
 
 h2 {
-  padding-top: 80px;
+  padding-top: 5rem;
+  margin-bottom: 64px;
 }
 
 button {
@@ -77,7 +90,7 @@ button {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 16px;
   color: rgb(184, 184, 184);
   line-height: 1.8;
 }
@@ -103,11 +116,11 @@ img {
 
 /* **********UTILS******** */
 .button {
-  padding: 1rem;
-  font-size: 1.125rem;
-  border-radius: 5px;
+  padding: 16px;
+  font-size: 18px;
+  border-radius: .3125rem;
   background-image: linear-gradient(to right, #e7b43a, #ecbc4b, #f0c45b, #f5cc6a, #f9d479);
-  text-shadow: white 3px;
+  text-shadow: white .1875rem;
   border: none;
   cursor: pointer;
 }
@@ -129,26 +142,26 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
-  height: 60px;
+  padding: 0 .625rem;
+  height: 3.75rem;
 }
 
 .active-link {
   font-weight: bold;
   color: white !important;
-  text-decoration:underline !important;
+  text-decoration: underline !important;
 }
 
 .nav__img {
-  height: 30px;
-  width: auto;
+  height: 1.875rem;
+  width: 100%;
 }
 
 .nav__hamburger-icon,
 .nav__hamburger-close {
   color: white;
-  font-size: 1.5rem;
-  margin-right: 0.625rem;
+  font-size: 24px;
+  margin-right: 10px;
   cursor: pointer;
 }
 
@@ -163,7 +176,7 @@ img {
 /* ------ SIDEBAR ------- */
 .sidebar-mobile {
   position: fixed;
-  top: 60px;
+  top: 3.75rem;
   right: 0;
   height: 100vh;
   width: 60%;
@@ -182,14 +195,14 @@ img {
 
 .sidebar-mobile__item {
   color: var(--primary-text);
-  font-size: 1.2rem;
+  font-size: 19.2px;
   text-align: left;
   width: 100%;
   display: block;
-  padding: 1.5rem 0;
+  padding: 24px 0;
   text-decoration: none;
   display: flex;
-  gap: 2rem;
+  gap: 32px;
 }
 
 .sidebar-mobile__item:hover {
@@ -198,7 +211,7 @@ img {
 }
 
 .sidebar-mobile__item i {
-  padding-left: 1.5rem;
+  padding-left: 24px;
 }
 
 
@@ -210,13 +223,13 @@ img {
 /********************* HERO *********************/
 
 .hero-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url("../assets/images/space-bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url("../assets/images/space-bg2.webp");
   min-height: 100vh;
 }
 
 .hero {
   padding: 0 var(--padding);
-  padding-bottom: 6rem;
+  padding-bottom: 96px;
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
@@ -234,18 +247,18 @@ img {
 .hero__heading-background {
   background-image: linear-gradient(to right, #c785d2af, #a66fc0bb, #855aaeb0, #65479d, #40358b);
   width: fit-content;
-  padding: 0.6rem 1.5rem 0 1.5rem;
-  border-radius: .125rem;
-  border: 1px solid gray;
-  margin-bottom: 2rem;
+  padding: 9.6px 24px 0 24px;
+  border-radius: 2px;
+  border: .0625rem solid gray;
+  margin-bottom: 32px;
 }
 
 .typed-container {
-  height: 100px;
+  height: 6.25rem;
 }
 
 #typed {
-  font-size: 3rem;
+  font-size: 48px;
   font-family: 'QuirkyRobot', sans-serif;
 }
 
@@ -272,13 +285,13 @@ img {
 }
 
 .typed-cursor {
-  font-size: 1.8rem;
+  font-size: 28.8px;
   font-family: 'QuirkyRobot', sans-serif;
 }
 
 .hero__paragraph {
-  margin: 1rem 0 2rem 0;
-  max-width: 430px;
+  margin: 16px 0 32px 0;
+  max-width: 26.875rem;
 }
 
 .hero__contact-btn {
@@ -289,7 +302,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: .9375rem;
+  gap: 15px;
 }
 
 .hero__right {
@@ -301,9 +314,11 @@ img {
 }
 
 .hero__astronaut {
-  padding: 4rem 0;
-  max-width: 350px;
-  animation: zoomIn 1s ease-in-out forwards, updown 3s linear 1s infinite alternate;
+  padding: 64px 0;
+  max-width: 21.875rem;
+  animation: zoomIn 1s ease-in-out 0.2s forwards, updown 2s linear 1s infinite alternate;
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes zoomIn {
@@ -318,11 +333,11 @@ img {
 
 @keyframes updown {
   0% {
-    transform: translateY(0px);
+    transform: translateY(0rem);
   }
 
-  50% {
-    transform: translateY(40px);
+  100% {
+    transform: translateY(2.5rem);
   }
 
 }
@@ -337,6 +352,27 @@ img {
 
 .projects {
   min-height: 100vh;
+  padding: 0 var(--padding);
+}
+
+.project__img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-screen {
+  position: absolute;
+  top: 10px;
+  left: 35px;
+  overflow: hidden;
+  width: 94%;
+
+}
+
+.projects__video-rs {
+  width: 100%;
+  overflow: hidden;
+
 }
 
 
@@ -353,6 +389,7 @@ img {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  padding: 0 var(--padding);
 }
 
 .skill {
@@ -363,6 +400,7 @@ img {
 /* ***********Contact*********** */
 .contact {
   min-height: 100vh;
+  padding: 0 var(--padding);
 }
 
 
@@ -371,15 +409,15 @@ img {
 
 
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 31.25rem) {
   .typed-container {
     height: auto;
   }
 }
 
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 55rem) {
   .wrapper {
-    padding: 0 2rem;
+    padding: 0 32px;
   }
 
 
@@ -392,7 +430,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 5rem;
   }
 
   .nav__desktop-links a,
@@ -407,40 +445,40 @@ img {
   }
 
   .nav__logo {
-    padding: 0.625rem 0;
+    padding: 10px 0;
   }
 
   .nav__desktop-links {
     display: flex;
-    gap: 4rem;
+    gap: 64px;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 19.2px;
   }
 
   .nav__desktop-links a {
     display: flex;
     align-items: flex-start;
-    gap: 5px;
+    gap: .3125rem;
   }
 
   .active-link {
-    border-bottom: 1px solid rgb(184, 184, 184);
+    border-bottom: .0625rem solid rgb(184, 184, 184);
     text-decoration: none !important;
   }
 
   .nav__desktop-socials {
     display: flex;
-    gap: 1.5rem;
+    gap: 24px;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 
   .button--secondary {
     background-color: transparent;
     background-image: none;
     color: white;
-    border: 1px solid rgb(184, 184, 184);
-    padding: 1rem;
+    border: .0625rem solid rgb(184, 184, 184);
+    padding: 16px;
   }
 
   .button--secondary:hover {
@@ -450,20 +488,20 @@ img {
   /* *****HERO******* */
 
   .hero-container {
-    padding-top: 9rem;
+    padding-top: 144px;
     background-attachment: fixed;
 
   }
 
   .hero {
-    /* padding: 0 3rem !important; */
+    /* padding: 0 48px !important; */
     flex-direction: row;
     padding: 0;
     justify-content: flex-end;
   }
 
   .hero__left {
-    min-width: 460px;
+    min-width: 28.75rem;
     text-align: left;
     align-items: flex-start;
   }
@@ -478,13 +516,13 @@ img {
 
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 75rem) {
   .wrapper {
     padding: 0;
   }
 
   .hero-container {
-    padding-top: 5rem;
+    padding-top: 80px;
   }
 
   .hero {
