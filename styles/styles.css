@@ -277,6 +277,10 @@ img {
   max-width: 430px;
 }
 
+.hero__contact-btn {
+  text-decoration: none;
+}
+
 .hero__button {
   display: flex;
   justify-content: center;
@@ -320,6 +324,12 @@ img {
 }
 
 /* *******Projects***** */
+.container-projects {
+  /* background-color: var(--main-background); */
+  background-image: linear-gradient(to bottom, #0d0514, #110519, #15051d, #190521, #1c0525);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .projects {
   min-height: 100vh;
@@ -343,6 +353,12 @@ img {
 
 .skill {
   flex: 1;
+}
+
+
+/* ***********Contact*********** */
+.contact {
+  min-height: 100vh;
 }
 
 
