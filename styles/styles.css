@@ -80,8 +80,14 @@ h4 {
 }
 
 h2 {
-  padding-top: 5rem;
-  margin-bottom: 64px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  font-size: 4rem;
+  background-image: linear-gradient(to right, #c785d2af, #a66fc0bb, #855aaeb0, #65479d, #40358b);
+  width: fit-content;
+  padding: 1.5rem 2rem 0.5rem 2rem;
+  border-radius: 2px;
+  border: .0625rem solid gray;
 }
 
 button {
@@ -352,21 +358,34 @@ img {
 
 .projects {
   min-height: 100vh;
-  padding: 0 var(--padding);
+  padding: 5rem var(--padding);
 }
 
-.projects__rsduel {
+.projects__project {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
-.laptopimg {
+.projects__title {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 3.5rem;
+}
+
+.projects__laptop-mockup {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.video {
+.projects__laptop-mockup img {
+  width: 100%;
+  height: 100%;
+}
+
+.projects__video {
   position: absolute;
   width: 82.5%;
   height: 75.5%;
@@ -376,11 +395,18 @@ img {
   overflow: hidden;
 }
 
-.video video {
+.projects__video video {
   width: 100%;
   height: 100%;
   object-fit: fill;
 }
+
+.projects__paragraph {
+  text-align: center;
+  margin: 1.5rem 0;
+  max-width: 450px;
+}
+
 
 
 
@@ -397,7 +423,7 @@ img {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  padding: 0 var(--padding);
+  padding: 5rem var(--padding);
 }
 
 .skill {
@@ -408,7 +434,7 @@ img {
 /* ***********Contact*********** */
 .contact {
   min-height: 100vh;
-  padding: 0 var(--padding);
+  padding: 5rem var(--padding);
 }
 
 
