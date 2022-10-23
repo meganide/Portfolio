@@ -64,6 +64,7 @@ body {
   width: 100vw;
   min-height: 100vh;
   max-width: 100%;
+  overflow-x: hidden;
   color: white;
   font-family: 'Centra', sans-serif;
   font-weight: 400;
@@ -613,12 +614,17 @@ img {
 
   /* ************PROJECTS ********** */
 
-
 }
 
 
 @media screen and (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .projects__laptop-mockup {
+    transform: none !important;
   }
 }
