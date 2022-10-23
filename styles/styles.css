@@ -438,6 +438,49 @@ img {
   height: 50px;
 }
 
+.projects__arrow {
+  position: absolute;
+  right: -26px;
+  top: -33px;
+  width: 60px !important;
+  height: 60px !important;
+}
+
+.laptop-engineers {
+  position: relative !important;
+}
+
+.laptopScreen-engineers {
+  object-fit: contain;
+  overflow-y: scroll;
+}
+
+.engineersPic {
+  width: 100%;
+  height: initial !important;
+}
+
+.laptopScreen-engineers::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #c0c0c0;
+  border-radius: 5px;
+}
+
+.laptopScreen-engineers::-webkit-scrollbar {
+  width: 5px;
+  background-color: #F5F5F5;
+}
+
+.laptopScreen-engineers::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      color-stop(0.44, rgb(122, 153, 217)),
+      color-stop(0.72, rgb(73, 125, 189)),
+      color-stop(0.86, rgb(28, 58, 148)));
+}
 
 
 /* ********SKILLS*********** */
@@ -478,7 +521,7 @@ img {
     font-size: 6rem;
     margin-bottom: 6rem;
   }
-  
+
   .typed-container {
     height: auto;
   }
@@ -595,6 +638,17 @@ img {
 
   .projects__project--reverse {
     flex-direction: row;
+  }
+
+  .projects__arrow {
+    right: -60px;
+    top: -35px;
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  .laptopScreen-engineers::-webkit-scrollbar {
+    width: 10px;
   }
 
 }
