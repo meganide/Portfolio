@@ -4,14 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Renas Hassan" />
     <title>Renas Hassan - Portfolio</title>
     <link rel="shortcut icon" href="./assets/images/logo.svg" />
     <link rel="stylesheet" href="/styles/styles.css" />
     <script type="module" src="./javascript/index.js"></script>
-    <script
-      src="https://kit.fontawesome.com/8bb946769b.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
 
   <body>
@@ -48,16 +45,23 @@
             <a
               href="https://se.linkedin.com/in/renas-hassan-9b248b186"
               target="_blank"
+              area-label="My LinkedIn Page"
               ><i class="fa-brands fa-linkedin"></i
             ></a>
-            <a href="https://www.facebook.com/Renash97" target="_blank"
+            <a
+              href="https://www.facebook.com/Renash97"
+              target="_blank"
+              area-label="My Facebook Page"
               ><i class="fa-brands fa-facebook"></i
             ></a>
-            <a href="https://github.com/meganide" target="_blank"
+            <a
+              href="https://github.com/meganide"
+              target="_blank"
+              area-label="My Github Page"
               ><i class="fa-brands fa-github"></i
             ></a>
           </article>
-          <a href="#contact"
+          <a href="#contact" area-label="Contact me!"
             ><button class="button button--secondary">Let's Connect</button></a
           >
         </section>
@@ -72,11 +76,11 @@
           >
         </li>
         <li>
-          <li>
-            <a class="sidebar-mobile__item mobile-projects" href="#projects"
-              ><i class="fa-solid fa-diagram-project"></i> Projects</a
-            >
-          </li>
+          <a class="sidebar-mobile__item mobile-projects" href="#projects"
+            ><i class="fa-solid fa-diagram-project"></i> Projects</a
+          >
+        </li>
+        <li>
           <a class="sidebar-mobile__item mobile-skills" href="#skills"
             ><i class="fa-solid fa-code"></i> Skills</a
           >
@@ -137,10 +141,8 @@
                 <span id="typed"></span>
               </div>
               <p class="hero__paragraph">
-                I am a junior fullstack web developer with a passion for
-                building beautiful, user-friendly and responsive websites. <br>
-                I always seek to improve my skills. Being a quick learner I
-                am confident that I can be a valuable asset to any team.
+                A junior full stack web developer who is passionate about
+                creating beautiful, functional and responsive websites.
               </p>
               <a href="#contact" class="hero__contact-btn">
                 <button class="button hero__button">
@@ -163,10 +165,19 @@
         <div class="wrapper">
           <section class="projects" id="projects">
             <h2>Projects</h2>
+            <article class="projects__rsduel">
+              <article class="laptopimg">
+                <img src="./assets/images/projects/mockup.png" alt="">
+                <article class="video">
+                  <video src="./assets/videos/fight2.mp4" autoplay loop muted preload="auto"></video>
+
+                </article>
+              </article>
+            </article>
           </section>
         </div>
       </div>
-      
+
       <div class="container-skills">
         <div class="wrapper">
           <section class="skills" id="skills">
@@ -187,6 +198,10 @@
       </div>
     </main>
 
+    <script
+      src="https://kit.fontawesome.com/8bb946769b.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </body>
 </html>
