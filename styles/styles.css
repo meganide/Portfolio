@@ -491,6 +491,66 @@ img {
       color-stop(0.86, rgb(28, 58, 148)));
 }
 
+.yourProject {
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  height: 100% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  overflow: hidden !important;
+}
+
+.laptopScreen-yourproject {
+  overflow: hidden;
+}
+
+.projects__your-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.phone {
+  width: 220px !important;
+  height: 413px;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.phone img {
+  height: 100%;
+}
+
+.phone__screen {
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  top: 2.1%;
+  left: 5%;
+  border-radius: 20px;
+  overflow: hidden !important;
+}
+
+.phone__your-project {
+  width: 100%;
+  height: 96%;
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+
+
 
 /* ********SKILLS*********** */
 .container-skills {
@@ -658,6 +718,10 @@ img {
 
   .laptopScreen-engineers::-webkit-scrollbar {
     width: 10px;
+  }
+
+  .projects__your-project {
+    flex-direction: row !important;
   }
 
 }
