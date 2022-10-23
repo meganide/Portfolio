@@ -60,13 +60,18 @@ html {
 }
 
 body {
-  background-image: linear-gradient(to bottom, #121516, #16191a, #191d1e, #1c2123, #1f2527);
+  /* background-image: linear-gradient(to bottom, #121516, #16191a, #191d1e, #1c2123, #1f2527); */
   width: 100vw;
   min-height: 100vh;
   max-width: 100%;
   color: white;
   font-family: 'Centra', sans-serif;
   font-weight: 400;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url("../assets/images/space-bg2.webp");
+  /* min-height: 100vh; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 h1,
@@ -223,14 +228,7 @@ img {
 }
 
 
-/********************* HERO *********************/
-body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url("../assets/images/space-bg2.webp");
-  /* min-height: 100vh; */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
+/********************* HERO ********************/
 
 .hero-container {
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url("../assets/images/space-bg2.webp"); */
