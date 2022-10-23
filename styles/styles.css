@@ -355,25 +355,33 @@ img {
   padding: 0 var(--padding);
 }
 
-.project__img-container {
+.projects__rsduel {
+  display: flex;
+  justify-content: center;
+}
+
+.laptopimg {
   position: relative;
-  overflow: hidden;
+  width: 290px;
+  height: 215px;
 }
 
-.video-screen {
+.video {
   position: absolute;
-  top: 10px;
-  left: 35px;
+  top: 5px;
+  left: 25px;
+  width: 240px;
+  height: 77%;
+  border-radius: 3px;
   overflow: hidden;
-  width: 94%;
-
 }
 
-.projects__video-rs {
+.video video {
   width: 100%;
-  overflow: hidden;
-
+  height: 100%;
+  object-fit: fill;
 }
+
 
 
 /* ********SKILLS*********** */
@@ -412,6 +420,11 @@ img {
 @media screen and (min-width: 31.25rem) {
   .typed-container {
     height: auto;
+  }
+
+  .laptopimg {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -527,6 +540,27 @@ img {
 
   .hero {
     padding: 0 !important;
+  }
+
+
+  /* ************PROJECTS ********** */
+
+  
+  .laptopimg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .video {
+    top: 36px;
+    left: 100px;
+    width: 875px;
+    height: 590px;
+  }
+  
+  .video video {
+    width: 100%;
+    height: 100%;
   }
 }
 
