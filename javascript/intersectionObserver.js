@@ -12,12 +12,18 @@ export function intersectionObserver() {
           'active: ', active.classList.remove('active-link');
         });
         // Add new active links
-        document
-          .querySelector('.desktop-' + activeLinkId)
-          .classList.add('active-link');
-        document
-          .querySelector('.mobile-' + activeLinkId)
-          .classList.add('active-link');
+        if (activeLinkId === 'contact') {
+          document
+            .querySelector('.mobile-' + activeLinkId)
+            .classList.add('active-link');
+        } else {
+          document
+            .querySelector('.desktop-' + activeLinkId)
+            .classList.add('active-link');
+          document
+            .querySelector('.mobile-' + activeLinkId)
+            .classList.add('active-link');
+        }
       }
     },
     { threshold: [0.65] }
