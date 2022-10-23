@@ -6,12 +6,14 @@ export function intersectionObserver() {
       // isIntersecting is true when element and viewport are overlapping
       // isIntersecting is false when element and viewport don't overlap
       // Remove all active links
+      console.log(entries)
       if (entries[0].isIntersecting === true) {
         const activeLinkId = entries[0].target.id;
         document.querySelectorAll('.active-link').forEach((active) => {
           'active: ', active.classList.remove('active-link');
         });
         // Add new active links
+        console.log(activeLinkId)
         if (activeLinkId === 'contact') {
           document
             .querySelector('.mobile-' + activeLinkId)
@@ -26,7 +28,7 @@ export function intersectionObserver() {
         }
       }
     },
-    { threshold: [0.65] }
+    { threshold: [0.3] }
   );
 
   pages.forEach((page) => {
