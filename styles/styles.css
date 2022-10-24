@@ -449,8 +449,8 @@ img {
 
 .projects__arrow {
   position: absolute;
-  right: -26px;
-  top: -33px;
+  right: -15px;
+  top: -40px;
   width: 60px !important;
   height: 60px !important;
 }
@@ -469,27 +469,29 @@ img {
   height: initial !important;
 }
 
-.laptopScreen-engineers::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #c0c0c0;
-  border-radius: 5px;
+.container-projects {
+  overflow: hidden;
 }
 
-.laptopScreen-engineers::-webkit-scrollbar {
-  width: 5px;
-  background-color: #F5F5F5;
+.phone__Screen--engineers {
+  overflow-y: scroll !important;
+  height: 95.5% !important;
 }
 
-.laptopScreen-engineers::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background-image: -webkit-gradient(linear,
-      left bottom,
-      left top,
-      color-stop(0.44, rgb(122, 153, 217)),
-      color-stop(0.72, rgb(73, 125, 189)),
-      color-stop(0.86, rgb(28, 58, 148)));
+.phone--engineers {
+  width: 300px !important;
+  height: 600px !important;
+  margin: 0 auto;
 }
+
+.phone__Screen--engineers::-webkit-scrollbar {
+  display: none;
+}
+
+.projects__info--engineers {
+  flex: none !important;
+}
+
 
 .yourProject {
   background: #000000;  /* fallback for old browsers */
@@ -516,7 +518,7 @@ img {
 }
 
 .phone {
-  width: 220px !important;
+  width: 220px;
   height: 413px;
   margin-top: 2rem;
   position: relative;
@@ -533,7 +535,7 @@ img {
   top: 2.1%;
   left: 5%;
   border-radius: 20px;
-  overflow: hidden !important;
+  overflow: hidden;
 }
 
 .phone__your-project {
@@ -710,8 +712,8 @@ img {
   }
 
   .projects__arrow {
-    right: -60px;
-    top: -35px;
+    right: -95px;
+    top: -45px;
     width: 100px !important;
     height: 100px !important;
   }

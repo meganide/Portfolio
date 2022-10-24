@@ -6,6 +6,6 @@ export function parallax() {
     let offsetY = window.scrollY;
     laptops[0].style.transform = `translateX(calc(120vh - ${offsetY}px))`;
     laptops[1].style.transform = `translateX(calc(-200vh + ${offsetY}px))`;
-    laptops[2].style.transform = `translateX(calc(290vh - ${offsetY}px))`;
+    // laptops[2].style.transform = `translateX(calc(290vh - ${offsetY}px))`;
   });
 }
