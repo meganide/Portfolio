@@ -4,6 +4,7 @@ import {intersectionObserver} from "./intersectionObserver.js"
 import {parallax} from "./parallax.js"
 import { animateOnScroll } from "./animateOnScroll.js";
 import { itemsOnHover } from "./skillIconsOnHover.js";
+import { animatePlanetsWhenVisible } from "./animatePlanetsCircle.js";
 
 function main() {
   showSidebar();
@@ -12,6 +13,7 @@ function main() {
   parallax();
   animateOnScroll()
   itemsOnHover()
+  animatePlanetsWhenVisible();
 }
 
 main();
