@@ -3,6 +3,7 @@ import { typeAnimation } from './typeAnimation.js';
 import {intersectionObserver} from "./intersectionObserver.js"
 import {parallax} from "./parallax.js"
 import { animateOnScroll } from "./animateOnScroll.js";
+import { itemsOnHover } from "./skillIconsOnHover.js";
 
 function main() {
   showSidebar();
@@ -10,6 +11,7 @@ function main() {
   intersectionObserver()
   parallax();
   animateOnScroll()
+  itemsOnHover()
 }
 
 main();
