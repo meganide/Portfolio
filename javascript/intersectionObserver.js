@@ -28,7 +28,7 @@ export function intersectionObserver() {
         }
       }
     },
-    { threshold: [0.3] }
+    { threshold: [0.15] }
   );
 
   pages.forEach((page) => {
