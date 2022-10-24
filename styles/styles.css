@@ -494,9 +494,12 @@ img {
 
 
 .yourProject {
-  background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width: 100%;
   height: 100% !important;
   display: flex;
@@ -514,7 +517,7 @@ img {
 .projects__your-project {
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
 }
 
 .phone {
@@ -541,9 +544,12 @@ img {
 .phone__your-project {
   width: 100%;
   height: 96%;
-  background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -586,6 +592,166 @@ img {
   position: absolute;
   top: 3rem;
   visibility: hidden;
+}
+
+
+
+.skills-circle-wrap {
+  width: 280px;
+  height: 280px;
+  position: relative;
+  margin: 10px auto;
+  pointer-events: fill;
+}
+
+.skills-top-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 50px #FFEB00;
+}
+
+.skills-circle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  transition: 3s all;
+}
+
+.skill-orbit {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transition: 3s all;
+  transform: perspective(900px);
+}
+
+.skill-orbit:nth-child(1) {
+  width: 100%;
+  height: 100%;
+}
+
+.skill-orbit:nth-child(2) {
+  width: 82.5%;
+  height: 82.5%;
+}
+
+.skill-orbit:nth-child(3) {
+  width: 65%;
+  height: 65%;
+}
+
+.skill-orbit:nth-child(4) {
+  width: 47.5%;
+  height: 47.5%;
+}
+
+.skill-orbit:nth-child(5) {
+  width: 30%;
+  height: 30%;
+}
+
+.skill-planet {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: -15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-family: Arial;
+  font-weight: 100;
+  text-align: center;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  transition: 1s all;
+}
+
+
+.skill-orbit:nth-child(1) .skill-planet {
+  -webkit-animation: travelOrbit 12s infinite linear;
+  animation: travelOrbit 12s infinite linear;
+  -webkit-transform-origin: 50% 525%;
+  transform-origin: 50% 525%;
+}
+
+.skill-orbit:nth-child(2) .skill-planet {
+  -webkit-animation: travelOrbit 10s infinite linear;
+  animation: travelOrbit 10s infinite linear;
+  -webkit-transform-origin: 50% 420%;
+  transform-origin: 50% 420%;
+}
+
+
+.skill-orbit:nth-child(3) .skill-planet {
+  -webkit-animation: travelOrbit 8s infinite linear;
+  animation: travelOrbit 8s infinite linear;
+  -webkit-transform-origin: 50% 350%;
+  transform-origin: 50% 350%;
+}
+
+
+
+.skill-orbit:nth-child(4) .skill-planet {
+  -webkit-animation: travelOrbit 6s infinite linear;
+  animation: travelOrbit 6s infinite linear;
+  -webkit-transform-origin: 50% 270%;
+  transform-origin: 50% 270%;
+}
+
+.skill-orbit:nth-child(5) .skill-planet {
+  -webkit-animation: travelOrbit 4s infinite linear;
+  animation: travelOrbit 4s infinite linear;
+  -webkit-transform-origin: 50% 200%;
+  transform-origin: 50% 200%;
+}
+
+@-webkit-keyframes travelOrbit {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes travelOrbit {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.skills__icon {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
 }
 
 
@@ -765,7 +931,10 @@ img {
 }
 
 @media screen and (max-width: 1200px) {
-  .projects__laptop-mockup, .phone--your-project, .phone--engineers {
+
+  .projects__laptop-mockup,
+  .phone--your-project,
+  .phone--engineers {
     transform: none !important;
   }
 }
