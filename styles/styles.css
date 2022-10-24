@@ -590,10 +590,6 @@ img {
 
 
 
-
-
-
-
 @media screen and (min-width: 31.25rem) {
   h2 {
     font-size: 6rem;
@@ -762,7 +758,7 @@ img {
 }
 
 @media screen and (max-width: 1200px) {
-  .projects__laptop-mockup {
+  .projects__laptop-mockup, .phone--your-project, .phone--engineers {
     transform: none !important;
   }
 }
