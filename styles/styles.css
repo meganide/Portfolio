@@ -597,6 +597,7 @@ img {
 
 
 .skills-circle-wrap {
+  visibility: hidden;
   width: 280px;
   height: 280px;
   position: relative;
