@@ -551,6 +551,13 @@ img {
   border-radius: 20px;
 }
 
+.projects__view-all {
+  margin: 0 auto;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+
 
 
 
@@ -724,6 +731,7 @@ img {
 
   .projects__your-project {
     flex-direction: row !important;
+    margin-bottom: 2rem;
   }
 
 }
