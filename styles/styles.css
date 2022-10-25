@@ -944,6 +944,11 @@ img {
     height: 600px;
   }
 
+  .skills-top-circle {
+    width: 70px;
+    height: 70px;
+  }
+
   .skill-orbit:nth-child(1) .skill-planet {
     -webkit-transform-origin: 50% 1050%;
     transform-origin: 50% 1050%;
