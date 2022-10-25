@@ -594,8 +594,6 @@ img {
   visibility: hidden;
 }
 
-
-
 .skills-circle-wrap {
   visibility: hidden;
   width: 280px;
@@ -776,6 +774,42 @@ img {
 
 }
 
+@media screen and (min-width: 37.5rem) {
+  /* ****************SKILLS************* */
+  .skills-circle-wrap {
+    width: 400px;
+    height: 400px;
+  }
+
+  .skill-orbit:nth-child(1) .skill-planet {
+    -webkit-transform-origin: 50% 720%;
+    transform-origin: 50% 720%;
+  }
+
+  .skill-orbit:nth-child(2) .skill-planet {
+    -webkit-transform-origin: 50% 590%;
+    transform-origin: 50% 590%;
+  }
+
+
+  .skill-orbit:nth-child(3) .skill-planet {
+    -webkit-transform-origin: 50% 480%;
+    transform-origin: 50% 480%;
+  }
+
+
+  .skill-orbit:nth-child(4) .skill-planet {
+    -webkit-transform-origin: 50% 370%;
+    transform-origin: 50% 370%;
+  }
+
+  .skill-orbit:nth-child(5) .skill-planet {
+    -webkit-transform-origin: 50% 240%;
+    transform-origin: 50% 240%;
+  }
+  
+}
+
 @media screen and (min-width: 55rem) {
   .wrapper {
     padding: 0 32px;
@@ -902,6 +936,39 @@ img {
   .projects__your-project {
     flex-direction: row !important;
     margin-bottom: 2rem;
+  }
+
+  /* ****************SKILLS************* */
+  .skills-circle-wrap {
+    width: 600px;
+    height: 600px;
+  }
+
+  .skill-orbit:nth-child(1) .skill-planet {
+    -webkit-transform-origin: 50% 1050%;
+    transform-origin: 50% 1050%;
+  }
+
+  .skill-orbit:nth-child(2) .skill-planet {
+    -webkit-transform-origin: 50% 880%;
+    transform-origin: 50% 880%;
+  }
+
+
+  .skill-orbit:nth-child(3) .skill-planet {
+    -webkit-transform-origin: 50% 710%;
+    transform-origin: 50% 710%;
+  }
+
+
+  .skill-orbit:nth-child(4) .skill-planet {
+    -webkit-transform-origin: 50% 530%;
+    transform-origin: 50% 530%;
+  }
+
+  .skill-orbit:nth-child(5) .skill-planet {
+    -webkit-transform-origin: 50% 340%;
+    transform-origin: 50% 340%;
   }
 
 }
