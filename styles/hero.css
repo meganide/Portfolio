@@ -1,8 +1,5 @@
 .hero-container {
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url("../assets/images/space-bg2.webp"); */
   min-height: 100vh;
-  /* background-repeat: no-repeat;
-  background-size: cover; */
 }
 
 .hero {
@@ -76,7 +73,7 @@
 .hero__paragraph {
   margin: 16px 0 32px 0;
   max-width: 26.875rem;
-  padding: 0 1.25rem;
+  padding: 0 3rem;
 }
 
 .hero__contact-btn {
@@ -102,7 +99,7 @@
   padding: 64px 0;
   max-width: 21.875rem;
   animation: zoomIn 1s ease-in-out forwards, updown 2s linear 1s infinite alternate;
-  width: 80%;
+  width: 100%;
   height: 100%;
   filter: brightness(70%);
 }
@@ -137,10 +134,10 @@
   }
 
   .hero {
-    /* padding: 0 48px !important; */
     flex-direction: row;
     padding: 0;
     justify-content: flex-end;
+    
   }
 
   .hero__left {
