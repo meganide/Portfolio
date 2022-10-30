@@ -1,0 +1,31 @@
+.landing {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.landing::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1000;
+  background: linear-gradient(to top, #02061E, transparent)
+}
+
+#background, #foreground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%) blur(1.3px);
+}
+
+#background {
+  z-index: -100;
+
+}
+

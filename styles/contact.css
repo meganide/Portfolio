@@ -1,0 +1,9 @@
+.container-contact {
+  background-color: rgb(26, 18, 43);
+
+}
+
+.contact {
+  min-height: 100vh;
+  padding: 5rem var(--padding);
+}

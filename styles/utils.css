@@ -1,0 +1,25 @@
+.button {
+  padding: 16px;
+  font-size: 18px;
+  border-radius: .3125rem;
+  background-image: linear-gradient(to right, #e7b43a, #ecbc4b, #f0c45b, #f5cc6a, #f9d479);
+  text-shadow: white .1875rem;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #ffb300;
+}
+
+.button--secondary {
+  background-color: transparent;
+  background-image: none;
+  color: white;
+  border: .0625rem solid rgb(184, 184, 184);
+  padding: 16px;
+}
+
+.button--secondary:hover {
+  color: black;
+}

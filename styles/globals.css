@@ -1,0 +1,126 @@
+/************ Custom Font ************/
+@font-face {
+  font-family: QuirkyRobot;
+  src: url("../assets/fonts/QuirkyRobot/QuirkyRobot.ttf");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: Centra;
+  src: url('../assets/fonts/Centra/CentraNo2-Medium.woff2') format('woff2'),
+    url('../assets/fonts/Centra/CentraNo2-Medium.woff') format('woff');
+  font-weight: 500;
+  font-display: fallback;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Centra;
+  src: url('../assets/fonts/Centra/CentraNo2-Bold.woff2') format('woff2'),
+    url('../assets/fonts/Centra/CentraNo2-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: Centra;
+  src: url('../assets/fonts/Centra/CentraNo2-Book.woff2') format('woff2'),
+    url('../assets/fonts/Centra/CentraNo2-Book.woff') format('woff');
+  font-weight: 400;
+  font-display: fallback;
+  font-style: normal;
+}
+
+
+
+
+/* **********General****** */
+html {
+  scroll-behavior: smooth;
+
+}
+
+:root {
+  --main-background: #0D0514;
+  --page-size: 68.75rem;
+  --primary-color: #a527d6;
+  --secondary-color: #57df79;
+  --tertiary-color: #4aa9d1;
+  --fourth-color: #E7B43A;
+  --padding: 15px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-image: linear-gradient(to bottom, #121516, #16191a, #191d1e, #1c2123, #1f2527); */
+  width: 100vw;
+  min-height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
+  color: white;
+  font-family: 'Centra', sans-serif;
+  font-weight: 400;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url("../assets/images/space-bg2.webp"); */
+  /* min-height: 100vh; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #0C1444;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: white;
+  font-size: 48px;
+  font-family: 'QuirkyRobot', sans-serif;
+  font-weight: normal;
+}
+
+h2 {
+  margin: 0 auto;
+  margin-bottom: 24px;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: .4375rem;
+}
+
+button {
+  font-family: 'Centra', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  color: rgb(184, 184, 184);
+  line-height: 1.8;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.prevent-select {
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
+}
+
+.wrapper {
+  max-width: var(--page-size);
+  margin: 0 auto;
+}
