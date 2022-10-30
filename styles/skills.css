@@ -1,7 +1,6 @@
-/* ********SKILLS*********** */
 .container-skills {
-  background-color: #02030C;
-  
+  background: -webkit-linear-gradient(to bottom, rgb(3, 4, 13), #080E2D);
+  background: linear-gradient(to bottom, rgb(3, 4, 13), #080E2D);
 }
 
 
