@@ -157,7 +157,7 @@ img {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 1000000;
 }
 
 .nav__mobile {
@@ -314,8 +314,9 @@ img {
   font-family: 'QuirkyRobot', sans-serif;
 }
 
-.hero__left{
+.hero__left {
   z-index: 5;
+
 }
 
 .hero__paragraph {
@@ -599,6 +600,7 @@ img {
   /* background-image: linear-gradient(to bottom, #0d0514, #110519, #15051d, #190521, #1c0525); */
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: rgb(26, 18, 43);
 }
 
 .skills {
@@ -781,6 +783,11 @@ img {
 
 
 /* ***********Contact*********** */
+.container-contact {
+  background-color: rgb(26, 18, 43);
+
+}
+
 .contact {
   min-height: 100vh;
   padding: 5rem var(--padding);

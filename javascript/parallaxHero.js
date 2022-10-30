@@ -4,7 +4,7 @@ export function parallaxHero() {
 
   window.addEventListener('scroll', () => {
     let value = window.scrollY;
-    background.style.top = value * 0.5 + 'px';
+    background.style.top = value * 0.75 + 'px';
     foreground.style.top = value * 0  + 'px';
   })
 }
