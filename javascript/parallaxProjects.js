@@ -3,7 +3,7 @@ const yourProjects = document.querySelectorAll('.phone--your-project');
 const engineers = document.querySelector('.phone--engineers');
 
 
-export function parallax() {
+export function parallaxProjects() {
   window.addEventListener('scroll', () => {
     let offsetY = window.scrollY;
     laptops[0].style.transform = `translateX(calc(120vh - ${offsetY}px))`;

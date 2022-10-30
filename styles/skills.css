@@ -20,11 +20,9 @@
 .skills__heading2 {
   position: absolute;
   top: 3rem;
-  visibility: hidden;
 }
 
 .skills-circle-wrap {
-  visibility: hidden;
   width: 280px;
   height: 280px;
   position: relative;
