@@ -314,6 +314,10 @@ img {
   font-family: 'QuirkyRobot', sans-serif;
 }
 
+.hero__left{
+  z-index: 5;
+}
+
 .hero__paragraph {
   margin: 16px 0 32px 0;
   max-width: 26.875rem;
@@ -342,8 +346,9 @@ img {
   padding: 64px 0;
   max-width: 21.875rem;
   animation: zoomIn 1s ease-in-out forwards, updown 2s linear 1s infinite alternate;
-  width: 100%;
+  width: 80%;
   height: 100%;
+  filter: brightness(70%);
 }
 
 @keyframes zoomIn {
