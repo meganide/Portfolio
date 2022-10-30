@@ -1,8 +1,8 @@
-/* ********SKILLS*********** */
 .container-skills {
-  background-color: #02030C;
-  
+  background: -webkit-linear-gradient(to bottom, rgb(3, 4, 13), #080E2D);
+  background: linear-gradient(to bottom, rgb(3, 4, 13), #080E2D);
 }
+
 
 .skills {
   display: flex;
@@ -178,6 +178,150 @@
   width: 30px;
   height: 30px;
   object-fit: cover;
+}
+
+
+/* Skills-bar */
+@keyframes grow-90 {
+  from {
+    right: 100%;
+  }
+  to {
+    right: 10%;
+  }
+}
+
+
+
+@keyframes grow-75 {
+  from {
+    right: 100%;
+  }
+  to {
+    right: 25%;
+  }
+}
+
+
+@keyframes grow-50 {
+  from {
+    right: 100%;
+  }
+  to {
+    right: 50%;
+  }
+}
+
+
+#skills__bar {
+  margin: 6.25rem auto 0 auto;
+  position: relative;
+  width: 98%;
+}
+
+#apps {
+  float: left;
+  text-align: right;
+  width: 19%;
+  margin-right: 10px;
+}
+
+#apps p {
+  padding: 10.5px 0;
+  /* padding-right: 10px; */
+  position: relative;
+  text-align: right;
+  z-index: 2;
+  font-size: .875rem;
+  line-height: normal;
+}
+
+#scale {
+  padding-bottom: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+}
+
+#scale p {
+  position: absolute;
+  bottom: 0;
+  left: -0.3%;
+}
+
+#scale p.one {
+  left: 24%;
+}
+#scale p.two {
+  left: 49%;
+}
+#scale p.three {
+  left: 74%;
+}
+#scale p.four {
+  left: 99%;
+}
+
+.grid {
+  border-left: 1px dotted #e8ab6a;
+  border-bottom: 1px dotted #e8ab6a;
+  float: left;
+  padding: 10px 0;
+  position: relative;
+  width: 60%;
+}
+
+.bar {
+  float: left;
+  height: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.bar .inner {
+  background-color: #feac40;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+}
+
+.bar.pct-90 .inner {
+  animation-duration: 2s;
+  animation-name: grow-90;
+  right: 10%;
+}
+
+.bar.pct-75 .inner {
+  animation-duration: 3s;
+  animation-name: grow-75;
+  right: 25%;
+}
+
+.bar.pct-50 .inner {
+  animation-duration: 5s;
+  animation-name: grow-50;
+  right: 50%;
+}
+
+.v-divider {
+  border-right: 1px dotted #f0c89d;
+  position: absolute;
+  left: 0;
+  right: 25%;
+  bottom: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.v-divider.one {
+  right: 75%;
+}
+.v-divider.two {
+  right: 50%;
 }
 
 

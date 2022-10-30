@@ -1,6 +1,6 @@
 export function parallaxHero() {
-  const background = document.querySelector('#background')
-  const foreground = document.querySelector('#foreground');
+  const background = document.querySelector('.background')
+  const foreground = document.querySelector('.foreground');
 
   window.addEventListener('scroll', () => {
     let value = window.scrollY;
