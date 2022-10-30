@@ -5,6 +5,7 @@ import {parallax} from "./parallax.js"
 import { animateOnScroll } from "./animateOnScroll.js";
 import { itemsOnHover } from "./skillIconsOnHover.js";
 import { animatePlanetsWhenVisible } from "./animatePlanetsCircle.js";
+import { parallaxHero } from "./parallaxHero.js";
 
 function main() {
   showSidebar();
@@ -14,6 +15,7 @@ function main() {
   animateOnScroll()
   itemsOnHover()
   animatePlanetsWhenVisible();
+  parallaxHero()
 }
 
 main();

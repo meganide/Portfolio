@@ -68,11 +68,12 @@ body {
   color: white;
   font-family: 'Centra', sans-serif;
   font-weight: 400;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url("../assets/images/space-bg2.webp");
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url("../assets/images/space-bg2.webp"); */
   /* min-height: 100vh; */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-color: #0C1444;
 }
 
 h1,
@@ -372,6 +373,14 @@ img {
   /* background-image: linear-gradient(to bottom, #0d0514, #110519, #15051d, #190521, #1c0525); */
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #02061E;
+  background: #02061E;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #02061E, rgb(26, 18, 43));
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #02061E, rgb(26, 18, 43));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .projects {
@@ -787,6 +796,7 @@ img {
 }
 
 @media screen and (min-width: 37.5rem) {
+
   /* ****************SKILLS************* */
   .skills-circle-wrap {
     width: 400px;
@@ -819,7 +829,7 @@ img {
     -webkit-transform-origin: 50% 240%;
     transform-origin: 50% 240%;
   }
-  
+
 }
 
 @media screen and (min-width: 55rem) {
@@ -903,6 +913,7 @@ img {
 
   .hero__paragraph {
     margin-top: 0;
+    text-shadow: 1px 1px 20px rgb(0 0 0);
   }
 
   .hero__astronaut {
