@@ -1,0 +1,261 @@
+/* ********SKILLS*********** */
+.container-skills {
+  background-color: #02030C;
+  
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 5rem var(--padding);
+  position: relative;
+}
+
+.skill {
+  flex: 1;
+}
+
+.skills__heading2 {
+  position: absolute;
+  top: 3rem;
+  visibility: hidden;
+}
+
+.skills-circle-wrap {
+  visibility: hidden;
+  width: 280px;
+  height: 280px;
+  position: relative;
+  margin: 10px auto;
+  pointer-events: fill;
+}
+
+.skills-top-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 50px #FFEB00;
+}
+
+.skills-circle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  transition: 3s all;
+}
+
+.skill-orbit {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transition: 3s all;
+  transform: perspective(900px);
+}
+
+.skill-orbit:nth-child(1) {
+  width: 100%;
+  height: 100%;
+}
+
+.skill-orbit:nth-child(2) {
+  width: 82.5%;
+  height: 82.5%;
+}
+
+.skill-orbit:nth-child(3) {
+  width: 65%;
+  height: 65%;
+}
+
+.skill-orbit:nth-child(4) {
+  width: 47.5%;
+  height: 47.5%;
+}
+
+.skill-orbit:nth-child(5) {
+  width: 30%;
+  height: 30%;
+}
+
+.skill-planet {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: -15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-family: Arial;
+  font-weight: 100;
+  text-align: center;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  transition: 1s all;
+}
+
+
+.skill-orbit:nth-child(1) .skill-planet {
+  -webkit-animation: travelOrbit 12s infinite linear;
+  animation: travelOrbit 12s infinite linear;
+  -webkit-transform-origin: 50% 525%;
+  transform-origin: 50% 525%;
+}
+
+.skill-orbit:nth-child(2) .skill-planet {
+  -webkit-animation: travelOrbit 10s infinite linear;
+  animation: travelOrbit 10s infinite linear;
+  -webkit-transform-origin: 50% 420%;
+  transform-origin: 50% 420%;
+}
+
+
+.skill-orbit:nth-child(3) .skill-planet {
+  -webkit-animation: travelOrbit 8s infinite linear;
+  animation: travelOrbit 8s infinite linear;
+  -webkit-transform-origin: 50% 350%;
+  transform-origin: 50% 350%;
+}
+
+
+
+.skill-orbit:nth-child(4) .skill-planet {
+  -webkit-animation: travelOrbit 6s infinite linear;
+  animation: travelOrbit 6s infinite linear;
+  -webkit-transform-origin: 50% 270%;
+  transform-origin: 50% 270%;
+}
+
+.skill-orbit:nth-child(5) .skill-planet {
+  -webkit-animation: travelOrbit 4s infinite linear;
+  animation: travelOrbit 4s infinite linear;
+  -webkit-transform-origin: 50% 200%;
+  transform-origin: 50% 200%;
+}
+
+@-webkit-keyframes travelOrbit {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes travelOrbit {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.skills__icon {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+
+@media screen and (min-width: 37.5rem) {
+  .skills-circle-wrap {
+    width: 400px;
+    height: 400px;
+  }
+
+  .skill-orbit:nth-child(1) .skill-planet {
+    -webkit-transform-origin: 50% 720%;
+    transform-origin: 50% 720%;
+  }
+
+  .skill-orbit:nth-child(2) .skill-planet {
+    -webkit-transform-origin: 50% 590%;
+    transform-origin: 50% 590%;
+  }
+
+
+  .skill-orbit:nth-child(3) .skill-planet {
+    -webkit-transform-origin: 50% 480%;
+    transform-origin: 50% 480%;
+  }
+
+
+  .skill-orbit:nth-child(4) .skill-planet {
+    -webkit-transform-origin: 50% 370%;
+    transform-origin: 50% 370%;
+  }
+
+  .skill-orbit:nth-child(5) .skill-planet {
+    -webkit-transform-origin: 50% 240%;
+    transform-origin: 50% 240%;
+  }
+
+}
+
+
+
+@media screen and (min-width: 55rem) {
+  .skills-circle-wrap {
+    width: 600px;
+    height: 600px;
+  }
+
+  .skills-top-circle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .skill-orbit:nth-child(1) .skill-planet {
+    -webkit-transform-origin: 50% 1050%;
+    transform-origin: 50% 1050%;
+  }
+
+  .skill-orbit:nth-child(2) .skill-planet {
+    -webkit-transform-origin: 50% 880%;
+    transform-origin: 50% 880%;
+  }
+
+
+  .skill-orbit:nth-child(3) .skill-planet {
+    -webkit-transform-origin: 50% 710%;
+    transform-origin: 50% 710%;
+  }
+
+
+  .skill-orbit:nth-child(4) .skill-planet {
+    -webkit-transform-origin: 50% 530%;
+    transform-origin: 50% 530%;
+  }
+
+  .skill-orbit:nth-child(5) .skill-planet {
+    -webkit-transform-origin: 50% 340%;
+    transform-origin: 50% 340%;
+  }
+
+}

@@ -1,0 +1,234 @@
+/* *******Projects***** */
+.container-projects {
+  background-image: linear-gradient(#02061E, #01020cb9),  url(../assets/images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70%;
+}
+
+.projects {
+  min-height: 100vh;
+  padding: 5rem var(--padding);
+  padding-bottom: 0;
+}
+
+.projects__project {
+  padding-bottom: 5rem;
+}
+
+.projects__project--enginers {
+  padding-bottom: 2rem;
+}
+
+.projects__laptop-mockup {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex: 2;
+  margin-top: 3rem;
+}
+
+.projects__laptop-mockup img {
+  width: 100%;
+  height: 100%;
+}
+
+.projects__video {
+  position: absolute;
+  width: 82.5%;
+  height: 75.5%;
+  left: 9%;
+  top: 4%;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.projects__video video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+
+.projects__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects__title {
+  text-align: center;
+  margin-top: 1.4rem;
+  font-size: 3.5rem;
+}
+
+.projects__paragraph {
+  text-align: center;
+  margin-bottom: 0.8rem;
+  max-width: 450px;
+}
+
+.projects__technologies {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: .3125rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  background-color: rgb(219, 212, 212);
+}
+
+.projects__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+
+.projects__icon--node {
+  width: 50px;
+  height: 50px;
+}
+
+.projects__arrow {
+  position: absolute;
+  right: -15px;
+  top: -40px;
+  width: 60px !important;
+  height: 60px !important;
+}
+
+.laptop-engineers {
+  position: relative !important;
+}
+
+.laptopScreen-engineers {
+  object-fit: contain;
+  overflow-y: scroll;
+}
+
+.engineersPic {
+  width: 100%;
+  height: initial !important;
+}
+
+.container-projects {
+  overflow: hidden;
+}
+
+.phone__Screen--engineers {
+  overflow-y: scroll !important;
+  height: 95.5% !important;
+}
+
+.phone--engineers {
+  width: 300px !important;
+  height: 600px !important;
+  margin: 0 auto;
+}
+
+.phone__Screen--engineers::-webkit-scrollbar {
+  display: none;
+}
+
+.projects__info--engineers {
+  flex: none !important;
+}
+
+
+.yourProject {
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+  width: 100%;
+  height: 100% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  overflow: hidden !important;
+}
+
+.laptopScreen-yourproject {
+  overflow: hidden;
+}
+
+.projects__your-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phone {
+  width: 220px;
+  height: 413px;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.phone img {
+  height: 100%;
+}
+
+.phone__screen {
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  top: 2.1%;
+  left: 5%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.phone__your-project {
+  width: 100%;
+  height: 96%;
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.projects__view-all {
+  margin: 0 auto;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+
+@media screen and (min-width: 55rem) {
+
+  .projects__project {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12rem;
+  }
+
+  .projects__project--reverse {
+    flex-direction: row;
+  }
+
+  .projects__arrow {
+    right: -95px;
+    top: -45px;
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  .laptopScreen-engineers::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .projects__your-project {
+    flex-direction: row !important;
+    margin-bottom: 2rem;
+  }
+}
