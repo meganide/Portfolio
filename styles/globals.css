@@ -80,6 +80,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-color: #0C1444;
+  cursor: url(../assets/images/cursor.png), auto;
 }
 
 h1,
@@ -147,6 +148,7 @@ img {
   animation-name: none;
   transform-origin: 80% 80%;
   transition: transform 0.5s ease-in-out;
+  background-image: url(../assets/images/cursor.png);
   
 }
 
@@ -155,7 +157,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  border: 2px solid rgb(194, 0, 194);
+  border: 2px solid rgb(167, 167, 167);
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -163,18 +165,6 @@ img {
   animation-name: pulse;
 }
 
-
-.cursor__inner {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: rgb(194, 0, 194);
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1000000;
-}
 
 .click {
   animation: click 0.3s ease-in-out;
