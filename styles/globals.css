@@ -57,9 +57,15 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  cursor: none;
+}
+
+button:hover {
+  cursor: none;
 }
 
 body {
+
   /* background-image: linear-gradient(to bottom, #121516, #16191a, #191d1e, #1c2123, #1f2527); */
   width: 100vw;
   min-height: 100vh;
@@ -123,4 +129,88 @@ img {
 .wrapper {
   max-width: var(--page-size);
   margin: 0 auto;
+}
+
+
+
+.cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 10000000;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  background-color: white;
+  transition: width 0.1s ease-in-out, height 0.1s ease-in-out;
+  animation: borderAnim 4s linear infinite;
+  animation-name: none;
+  transform-origin: 80% 80%;
+  transition: transform 0.5s ease-in-out;
+  
+}
+
+.cursor__border {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid gray;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: pulse 0.3s ease-in-out infinite alternate;
+  animation-name: pulse;
+}
+
+
+.cursor__inner {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000000;
+}
+
+.click {
+  animation: click 0.3s ease-in-out;
+}
+
+@keyframes click {
+  100% {
+    transform: scale(3);
+    opacity: 0;
+    background-color: purple;
+  }
+}
+
+@keyframes pulse {
+  100% {
+    transform: scale(1.2);
+  }
+  
+}
+
+@keyframes borderAnim {
+  0%, 100% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  25%, 75% {
+    border-radius: 64%, 36% 72% 28% / 35% 60% 40% 65%;
+  }
+  50% {
+    border-radius: 46% 54% 38% 62% / 66% 38% 62% 34%;
+  }
+}
+
+
+
+
+
+a:hover ~ .cursor, button:hover ~ .cursor {
+  transform: scale(6);
 }
