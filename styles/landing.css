@@ -25,11 +25,11 @@
 
 .background {
   z-index: -100;
-  filter: brightness(25%) blur(1.3px) !important;
+  filter: brightness(25%) !important;
 }
 
 .foreground {
-  filter: brightness(65%) blur(1px) !important;
+  filter: brightness(65%) !important;
 
 }
 
