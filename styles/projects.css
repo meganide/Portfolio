@@ -1,3 +1,7 @@
+video {
+  width: 100%;
+}
+
 .container-projects {
   background-image: linear-gradient(#02061E, #01020c91),  url(../assets/images/bg.jpg);
   background-repeat: no-repeat;

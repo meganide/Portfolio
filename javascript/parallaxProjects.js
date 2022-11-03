@@ -8,7 +8,8 @@ export function parallaxProjects() {
     let offsetY = window.scrollY;
     laptops[0].style.transform = `translateX(calc(120vh - ${offsetY}px))`;
     laptops[1].style.transform = `translateX(calc(-220vh + ${offsetY}px))`;
-    engineers.style.transform = `translateX(calc(320vh - ${offsetY}px))`;
+    laptops[2].style.transform = `translateX(calc(+310vh - ${offsetY}px))`;
+    // engineers.style.transform = `translateX(calc(320vh - ${offsetY}px))`;
     yourProjects[0].style.transform = `translateX(calc(-410vh + ${offsetY}px))`;
     yourProjects[1].style.transform = `translateX(calc(-410vh + ${offsetY}px))`;
     
