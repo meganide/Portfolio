@@ -22,6 +22,143 @@
   top: 3rem;
 }
 
+.all-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6rem;
+  width: 100%;
+  margin-bottom: 10rem;
+  text-align: center;
+}
+
+.all-skills__skill {
+  border-radius: 5px;
+  flex: 1;
+}
+
+.all-skills__icons {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+.all-skills__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .3125rem;
+}
+
+.all-skills__icon {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.html5 {
+  background-color: rgb(228, 77, 38, 0.2);
+}
+
+.css {
+  background-color: rgb(21, 114, 182, 0.2);
+}
+
+.js {
+  background-color: rgb(247, 223, 30, 0.2);
+}
+
+.ts {
+  background-color: rgb(22, 119, 199, 0.2);
+}
+
+.react {
+  background-color: rgb(85, 195, 226, 0.2);
+}
+
+.node {
+  background-color: rgb(85, 195, 226, 0.2);
+}
+
+.express {
+  background-color: rgba(248, 248, 248, 0.7);
+}
+
+.mysql {
+  background-color: rgb(44,117,149, 0.2);
+}
+
+.mongodb {
+  background-color: rgb(79,170,65, 0.2);
+}
+
+.graphql {
+  background-color: rgb(223,52,166, 0.2);
+}
+
+.api {
+  background-color: rgb(87,164,255, 0.2);
+}
+
+.auth {
+  background-color: rgb(0,169,18, 0.2);
+}
+
+.socket {
+  background-color: rgba(95, 95, 95, 0.2);
+}
+
+.firebase {
+  background-color: rgb(255,202,40, 0.2);
+}
+
+.git {
+  background-color: rgb(222,76,54, 0.2);
+}
+
+.github {
+  background-color: rgba(248, 248, 248, 0.7);
+}
+
+.jest {
+  background-color: rgb(153,65,91, 0.2);
+}
+
+.postman {
+  background-color: rgb(243,105,51, 0.2);
+}
+
+.aws {
+  background-color: rgb(255,153,0, 0.4);
+}
+
+.heroku {
+  background-color: rgb(103,98,166, 0.2);
+}
+
+.netlify {
+  background-color: rgb(66,181,187, 0.2);
+}
+
+.photoshop {
+  background-color: rgb(49,168,255, 0.2);
+}
+
+.python {
+  background-color: rgb(55,115,165, 0.2);
+}
+
+.shopify {
+  background-color: rgb(149,191,70, 0.2);
+}
+
+.all-skills__icon img {
+  width: 40px;
+  height: 40px;
+}
+
 .skills-circle-wrap {
   width: 280px;
   height: 280px;
@@ -186,6 +323,7 @@
   from {
     right: 100%;
   }
+
   to {
     right: 10%;
   }
@@ -197,6 +335,7 @@
   from {
     right: 100%;
   }
+
   to {
     right: 25%;
   }
@@ -207,6 +346,7 @@
   from {
     right: 100%;
   }
+
   to {
     right: 50%;
   }
@@ -253,12 +393,15 @@
 #scale p.one {
   left: 24%;
 }
+
 #scale p.two {
   left: 49%;
 }
+
 #scale p.three {
   left: 74%;
 }
+
 #scale p.four {
   left: 99%;
 }
@@ -320,6 +463,7 @@
 .v-divider.one {
   right: 75%;
 }
+
 .v-divider.two {
   right: 50%;
 }
@@ -360,7 +504,12 @@
 
 }
 
-
+@media screen and (max-width: 760px) {
+  .all-skills {
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+}
 
 @media screen and (min-width: 55rem) {
   .skills-circle-wrap {
