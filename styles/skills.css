@@ -36,8 +36,6 @@
   flex: 1;
 }
 
-.all-skills__header {}
-
 .all-skills__icons {
   display: flex;
   flex-flow: row wrap;
@@ -155,8 +153,6 @@
 .shopify {
   background-color: rgb(149,191,70, 0.2);
 }
-
-
 
 .all-skills__icon img {
   width: 40px;
@@ -511,6 +507,7 @@
 @media screen and (max-width: 760px) {
   .all-skills {
     flex-direction: column;
+    margin-bottom: 5rem;
   }
 }
 
