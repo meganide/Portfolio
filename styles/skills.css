@@ -10,6 +10,7 @@
   align-items: center;
   min-height: 100vh;
   padding: 5rem var(--padding);
+  padding-bottom: 0;
   position: relative;
 }
 
