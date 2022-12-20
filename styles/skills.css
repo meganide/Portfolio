@@ -58,6 +58,30 @@
   align-items: center;
 }
 
+.all-skills__icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.all-skills__icons--small .all-skills__icon {
+  height: 35px;
+  width: 35px;
+}
+
+.all-skills__icons--small .all-skills__icon img {
+  width: 17.5px;
+  height: 17.5px;
+}
+
+.all-skills__icons--small {
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.all-skills__icons--small p {
+  font-size: .875rem;
+}
+
 .html5 {
   background-color: rgb(228, 77, 38, 0.2);
 }
@@ -154,9 +178,8 @@
   background-color: rgb(149,191,70, 0.2);
 }
 
-.all-skills__icon img {
-  width: 40px;
-  height: 40px;
+.drive {
+  background-color: rgb(0,172,71, 0.2);
 }
 
 .skills-circle-wrap {
