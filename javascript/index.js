@@ -7,13 +7,13 @@ import { cursor } from './cursor.js';
 import './sendEmail.js';
 
 function main() {
-  emailjs.init('o0DRfkiQeGWH3r1F5');
   cursor();
   showSidebar();
   typeAnimation();
   intersectionObserver();
   parallaxProjects();
   parallaxHero();
+  emailjs.init('o0DRfkiQeGWH3r1F5');
 }
 
 main();
