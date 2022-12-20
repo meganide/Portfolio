@@ -41,6 +41,10 @@
   resize: none;
 }
 
+.contact__form textarea {
+  line-height: 1.7;
+}
+
 input:-webkit-autofill {
   -webkit-text-fill-color: rgb(221, 221, 221) !important;
   -webkit-background-clip: text;
