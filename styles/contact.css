@@ -46,17 +46,28 @@ input:-webkit-autofill {
   -webkit-background-clip: text;
 }
 
-.contact__form input::placeholder, .contact__form textarea::placeholder {
+.contact__form input::placeholder,
+.contact__form textarea::placeholder {
   color: rgb(184, 184, 184);
 }
 
 .button--contact {
   padding: 16px 1.5rem;
-  background-image: linear-gradient(to right, #303b76, #8181a3, #b4b2c4, #ccc9db, #ffffff);
+  background-image: linear-gradient(to right, #303b76, #8181a3, #b4b2c4, #ccc9db, #ffffff) !important;
   width: 100%;
   max-width: 450px;
+  color: black !important;
+  font-weight: 700 !important;
 }
 
 .button--contact:hover {
-  background: white;
+  background: white !important;
+}
+
+#form__info {
+  width: 100%;
+  max-width: 450px;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
 }

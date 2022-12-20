@@ -23,3 +23,7 @@
 .button--secondary:hover {
   color: black;
 }
+
+.hide {
+  display: none;
+}

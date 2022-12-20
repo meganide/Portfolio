@@ -241,7 +241,11 @@
                 <section class="all-skills__icons all-skills__icons--small">
                   <section class="all-skills__container">
                     <article class="all-skills__icon drive">
-                      <img src="./assets/images/icons/google-drive.svg" alt="drive" loading="lazy" />
+                      <img
+                        src="./assets/images/icons/google-drive.svg"
+                        alt="drive"
+                        loading="lazy"
+                      />
                     </article>
                     <p>Drive</p>
                   </section>
@@ -541,12 +545,21 @@
         <div class="wrapper">
           <section class="contact" id="contact">
             <h2 class="contact__heading">Contact</h2>
-            <img src="" alt="">
-            <form class="contact__form">
-              <input type="text" id="name" placeholder="Name">
-              <input type="email" id="email" placeholder="Email">
-              <textarea id="message" cols="10" rows="10" placeholder="Message"></textarea>
-              <button class="button button--contact" type="submit">Send</button>
+            <form class="contact__form" id="sendForm">
+              <input type="text" name="name" id="name" placeholder="Name" />
+              <input type="email" name="email" id="email" placeholder="Email" />
+              <textarea
+                id="message"
+                name="message"
+                cols="10"
+                rows="10"
+                placeholder="Message"
+                required
+              ></textarea>
+              <input type="submit" id="sendButton" class="button button--contact" value="Send" />
+              <aside id="form__info" class="hide">
+                <p id="form__popup-txt">Email successfully sent!</p>
+              </aside>
             </form>
           </section>
         </div>
@@ -555,5 +568,9 @@
 
     <script src="https://kit.fontawesome.com/8bb946769b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
   </body>
 </html>
