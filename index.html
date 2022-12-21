@@ -158,6 +158,10 @@
                   <source
                     src="./assets/videos/rsduelmock.webm"
                     type='video/webm;codecs="vp9"'
+                  />
+                  <source
+                    src="./assets/videos/rsduelmock_1.mov"
+                    type='video/quicktime'
                     onerror="fallback(parentNode);
                   function fallback(video) {;
                     while (video.hasChildNodes()) {
@@ -166,10 +170,6 @@
                     }
                     video.parentNode.removeChild(video);
                   }"
-                  />
-                  <source
-                    src="./assets/videos/rsduelmock-vp8.webm"
-                    type='video/webm;codecs="vp8"'
                   />
                   <p style="text-align: center; color: red">
                     Video not compatible with your browser!
@@ -223,15 +223,19 @@
                   <source
                     src="./assets/videos/hnt.webm"
                     type="video/webm"
-                    onerror="fallback(parentNode);
-                  function fallback(video) {;
-                    while (video.hasChildNodes()) {
-                      if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
-                      else video.parentNode.insertBefore(video.firstChild, video);
-                    }
-                    video.parentNode.removeChild(video);
-                  }"
                   />
+                  <source
+                  src="./assets/videos/rsduelmock_2.mov"
+                  type='video/quicktime'
+                  onerror="fallback(parentNode);
+                function fallback(video) {;
+                  while (video.hasChildNodes()) {
+                    if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
+                    else video.parentNode.insertBefore(video.firstChild, video);
+                  }
+                  video.parentNode.removeChild(video);
+                }"
+                />
                   <p style="text-align: center; color: red">
                     Video not compatible with your browser!
                   </p>
