@@ -41,12 +41,3 @@
     scroll-behavior: auto;
   }
 }
-
-@media screen and (max-width: 1200px) {
-
-  .projects__laptop-mockup,
-  .phone--your-project,
-  .phone--engineers {
-    transform: none !important;
-  }
-}
