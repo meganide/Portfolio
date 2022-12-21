@@ -159,8 +159,8 @@
                   <source
                     src="./assets/videos/rsduelmock-vp8.webm"
                     type="video/webm; codecs='vp8'"
+                    onerror="fallback(parentNode)"
                   />
-                  <img src="./assets/videos/dog.jpg" alt="" title="video could not be shown">
                 </video>
               </article>
               <section class="projects__info">
@@ -585,4 +585,17 @@
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
   </body>
+
+  <script>
+    function fallback(video) {
+      console.log("yo")
+      // replace <video> with its contents
+      console.log('fallback');
+      while (video.hasChildNodes()) {
+        if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
+        else video.parentNode.insertBefore(video.firstChild, video);
+      }
+      video.parentNode.removeChild(video);
+    }
+  </script>
 </html>
