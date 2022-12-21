@@ -5,6 +5,7 @@ import { parallaxProjects } from './parallaxProjects.js';
 import { parallaxHero } from './parallaxHero.js';
 import { cursor } from './cursor.js';
 import './sendEmail.js';
+import './animations.js';
 
 function main() {
   cursor();
