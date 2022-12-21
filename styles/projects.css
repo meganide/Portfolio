@@ -111,14 +111,6 @@ video {
   height: 50px;
 }
 
-.projects__arrow {
-  position: absolute;
-  right: -15px;
-  top: -40px;
-  width: 60px !important;
-  height: 60px !important;
-}
-
 .laptop-engineers {
   position: relative !important;
 }
@@ -231,17 +223,6 @@ video {
     justify-content: center;
     align-items: center;
     margin-bottom: 12rem;
-  }
-
-  .projects__project--reverse {
-    flex-direction: row;
-  }
-
-  .projects__arrow {
-    right: -95px;
-    top: -45px;
-    width: 100px !important;
-    height: 100px !important;
   }
 
   .projects__info--hnt, .projects__info--project {
