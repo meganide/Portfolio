@@ -155,12 +155,13 @@
             <article class="projects__project">
               <article class="projects__laptop-mockup">
                 <video disableRemotePlayback muted autoplay loop playsinline>
-                  <source src="./assets/videos/rsduelmock.webm" type="video/webm" />
+                  <source src="./assets/videos/rsduelmock.webm" type='video/webm;codecs="vp9"' />
                   <source
                     src="./assets/videos/rsduelmock-vp8.webm"
-                    type="video/webm; codecs='vp8'"
+                    type='video/webm;codecs="vp8"'
                     onerror="fallback(parentNode)"
                   />
+                  Not supported!
                 </video>
               </article>
               <section class="projects__info">
@@ -588,7 +589,7 @@
 
   <script>
     function fallback(video) {
-      console.log("yo")
+      console.log('yo');
       // replace <video> with its contents
       console.log('fallback');
       while (video.hasChildNodes()) {
