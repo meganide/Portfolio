@@ -155,7 +155,18 @@
             <article class="projects__project">
               <article class="projects__laptop-mockup">
                 <video disableRemotePlayback muted autoplay loop playsinline>
-                  <source src="./assets/videos/rsduelmock.webm" type="video/webm" />
+                  <source
+                    src="./assets/videos/rsduelmock.webm"
+                    type='video/webm;codecs="vp9"'
+                    onerror="fallback(parentNode);
+                  function fallback(video) {;
+                    while (video.hasChildNodes()) {
+                      if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
+                      else video.parentNode.insertBefore(video.firstChild, video);
+                    }
+                    video.parentNode.removeChild(video);
+                  }"
+                  />
                 </video>
               </article>
               <section class="projects__info">
@@ -202,7 +213,19 @@
             <article class="projects__project projects__project--reverse">
               <article class="projects__laptop-mockup">
                 <video disableRemotePlayback muted autoplay playsinline>
-                  <source src="./assets/videos/hnt.webm" type="video/webm" />
+                  <source
+                    src="./assets/videos/hnt.webm"
+                    type="video/webm"
+                    onerror="fallback(parentNode);
+                    function fallback(video) {;
+                  while (video.hasChildNodes()) {
+                    if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
+                    else video.parentNode.insertBefore(video.firstChild, video);
+                  }
+                  video.parentNode.removeChild(video);
+                }"
+                  />
+                  <img src="" alt="">
                 </video>
               </article>
               <section class="projects__info">
@@ -220,15 +243,24 @@
                     <p>Shopify</p>
                   </section>
                 </section>
-                <a href="https://hntantennas.com/" target="_blank" rel="noopener noreferrer"><button class="button">Check it out!</button></a>
+                <a href="https://hntantennas.com/" target="_blank" rel="noopener noreferrer"
+                  ><button class="button">Check it out!</button></a
+                >
               </section>
             </article>
 
             <article class="projects__project projects__project--enginers">
               <article class="projects__laptop-mockup">
                 <video disableRemotePlayback muted autoplay loop playsinline>
-                  <source src="./assets/videos/engineers2.webm" type="video/webm" />
-                </video>
+                  <source src="./assets/videos/engineers2.webm" type="video/webm" onerror="fallback(parentNode);
+                  function fallback(video) {;
+                    while (video.hasChildNodes()) {
+                      if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
+                      else video.parentNode.insertBefore(video.firstChild, video);
+                    }
+                    video.parentNode.removeChild(video);
+                  }"
+                  />
               </article>
               <section class="projects__info projects__info--engineers">
                 <h3 class="projects__title">ENGINEERS</h3>
@@ -271,15 +303,27 @@
                     <p>NodeJS</p>
                   </section>
                 </section>
-                <a href="https://engineers.nu/" target="_blank" rel="noopener noreferrer"><button class="button">Check it out!</button></a>
+                <a href="https://engineers.nu/" target="_blank" rel="noopener noreferrer"
+                  ><button class="button">Check it out!</button></a
+                >
               </section>
             </article>
 
             <article class="projects__project project__your-project projects__your-project">
               <article class="projects__laptop-mockup">
                 <video disableRemotePlayback muted autoplay playsinline>
-                  <source src="./assets/videos/yourproj.webm" type="video/webm" />
-                </video>
+                  <source src="./assets/videos/yourproj.webm" type="video/webm" onerror="fallback(parentNode);
+                  function fallback(video) {;
+                    while (video.hasChildNodes()) {
+                      if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
+                      else video.parentNode.insertBefore(video.firstChild, video);
+                    }
+                    video.parentNode.removeChild(video);
+                  }"
+                  />
+                  <p style="text-align: center; color: red">
+                    Video not compatible with your browser!
+                  </p>
               </article>
 
               <section class="projects__info">
