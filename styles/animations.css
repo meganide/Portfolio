@@ -1,0 +1,33 @@
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1s;
+}
+
+.fromRight {
+  transform: translateX(100%);
+}
+
+.fromLeft {
+  transform: translateX(-100%);
+}
+
+.all-skills__skill:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.all-skills__skill:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
