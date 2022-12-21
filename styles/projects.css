@@ -244,6 +244,10 @@ video {
     height: 100px !important;
   }
 
+  .projects__info--hnt, .projects__info--project {
+    margin-left: 3rem;
+  }
+
   .laptopScreen-engineers::-webkit-scrollbar {
     width: 10px;
   }

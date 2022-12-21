@@ -11,7 +11,7 @@ function main() {
   showSidebar();
   typeAnimation();
   intersectionObserver();
-  parallaxProjects();
+  // parallaxProjects();
   parallaxHero();
   emailjs.init('o0DRfkiQeGWH3r1F5');
 }
