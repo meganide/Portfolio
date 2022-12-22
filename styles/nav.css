@@ -127,7 +127,7 @@
 
   .nav__desktop-links a {
     display: flex;
-    align-items: flex-start;
+    align-items: baseline;
     gap: .3125rem;
   }
 
