@@ -12,6 +12,7 @@
   padding: 5rem var(--padding);
   padding-bottom: 0;
   position: relative;
+  overflow-x: hidden;
 }
 
 .skill {

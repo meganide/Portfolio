@@ -4,6 +4,10 @@
   transition: all 1s;
 }
 
+.fromTop {
+  transform: translateY(-30px);
+}
+
 .fromRight {
   transform: translateX(100%);
 }
@@ -18,6 +22,54 @@
 
 .all-skills__skill:nth-child(3) {
   transition-delay: 400ms;
+}
+
+.link:nth-child(1) {
+  transition-delay: 150ms;
+}
+
+.link:nth-child(2) {
+  transition-delay: 300ms;
+}
+
+.link:nth-child(3) {
+  transition-delay: 450ms;
+}
+
+.link:nth-child(4) {
+  transition-delay: 600ms;
+}
+
+.link:nth-child(5) {
+  transition-delay: 750ms;
+}
+
+.link:nth-child(6) {
+  transition-delay: 900ms;
+}
+
+.link:nth-child(7) {
+  transition-delay: 1050ms;
+}
+
+.link:nth-child(8) {
+  transition-delay: 1200ms;
+}
+
+.link:nth-child(9) {
+  transition-delay: 1350ms;
+}
+
+.link:nth-child(10) {
+  transition-delay: 1500ms;
+}
+
+.link:nth-child(11) {
+  transition-delay: 1650ms;
+}
+
+.link:nth-child(12) {
+  transition-delay: 1800ms;
 }
 
 .show {
