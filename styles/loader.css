@@ -1,0 +1,110 @@
+#loader {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(2, 7, 28);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@keyframes zoomInLoader {
+  from {
+    background-color: rgb(2, 7, 28);
+  }
+
+  to {
+    transform: scale(60);
+
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+
+@keyframes spin3D {
+  from {
+    transform: rotate3d(.5, .5, .5, 360deg);
+  }
+
+  to {
+    transform: rotate3d(0deg);
+  }
+}
+
+.spinner-box {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  animation: zoomInLoader 1s 0.8s, fadeOut 1s 0.2s;
+
+}
+
+.leo {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.blue-orbit {
+  width: 165px;
+  height: 165px;
+  border: 1px solid #91daffa5;
+  -webkit-animation: spin3D 3s linear .2s infinite, fadeOut 1s 0.2s;
+  ;
+  animation: spin3D 3s linear .2s infinite, fadeOut 1s 0.2s;
+  ;
+}
+
+.green-orbit {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #91ffbfa5;
+  -webkit-animation: spin3D 2s linear 0s infinite, fadeOut 1s 0.2s;
+  animation: spin3D 2s linear 0s infinite, fadeOut 1s 0.2s;
+
+}
+
+.red-orbit {
+  width: 90px;
+  height: 90px;
+  border: 1px solid #ffca91a5;
+  -webkit-animation: spin3D 1s linear 0s infinite, fadeOut 1s 0.2s;
+  animation: spin3D 1s linear 0s infinite, fadeOut 1s 0.2s;
+
+}
+
+.white-orbit {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ffffff;
+  -webkit-animation: spin3D 10s linear 0s infinite, fadeOut 1s 1s;
+  animation: spin3D 10s linear 0s infinite, fadeOut 1s 1s;
+
+}
+
+.w1 {
+  transform: rotate3D(1, 1, 1, 90deg);
+}
+
+.w2 {
+  transform: rotate3D(1, 2, .5, 90deg);
+}
+
+.w3 {
+  transform: rotate3D(.5, 1, 2, 90deg);
+}
