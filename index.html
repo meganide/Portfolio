@@ -13,152 +13,172 @@
   </head>
 
   <body>
-    <div class="cursor">
-      <div class="cursor__border"></div>
+    <div id="loader" class="zoomIn">
+      <div class="spinner-box">
+        <div class="blue-orbit leo"></div>
+
+        <div class="green-orbit leo"></div>
+
+        <div class="red-orbit leo"></div>
+
+        <div class="white-orbit w1 leo"></div>
+        <div class="white-orbit w2 leo"></div>
+        <div class="white-orbit w3 leo"></div>
+      </div>
     </div>
 
-    <nav class="nav">
-      <div class="wrapper">
-        <section class="nav__mobile">
-          <a href="#hero"><img class="nav__img" src="./assets/images/logo.svg" alt="logo" /></a>
-          <aside class="nav__hamburger">
-            <i class="nav__hamburger-icon fa-solid fa-bars"></i>
-            <i class="nav__hamburger-close fa-solid fa-xmark"></i>
-          </aside>
-        </section>
+    <div id="container">
+      
+      <div class="cursor">
+        <div class="cursor__border"></div>
+      </div>
 
-        <section class="nav__desktop">
-          <aside>
+      <nav class="nav">
+        <div class="wrapper">
+          <section class="nav__mobile">
             <a href="#hero"><img class="nav__img" src="./assets/images/logo.svg" alt="logo" /></a>
-          </aside>
-          <section class="nav__desktop-links">
-            <a class="desktop-hero active-link" href="#hero"
+            <aside class="nav__hamburger">
+              <i class="nav__hamburger-icon fa-solid fa-bars"></i>
+              <i class="nav__hamburger-close fa-solid fa-xmark"></i>
+            </aside>
+          </section>
+
+          <section class="nav__desktop">
+            <aside>
+              <a href="#hero"><img class="nav__img" src="./assets/images/logo.svg" alt="logo" /></a>
+            </aside>
+            <section class="nav__desktop-links">
+              <a class="desktop-hero active-link" href="#hero"
+                ><i class="fa-solid fa-house"></i> Home</a
+              >
+              <a class="desktop-projects" href="#projects"
+                ><i class="fa-solid fa-diagram-project"></i> Projects</a
+              >
+              <a class="desktop-skills" href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
+            </section>
+            <article class="nav__desktop-socials">
+              <a
+                href="https://se.linkedin.com/in/renas-hassan-9b248b186"
+                target="_blank"
+                aria-label="LinkedIn"
+                title="LinkedIn"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/Renash97"
+                target="_blank"
+                aria-label="Facebook"
+                title="Facebook"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://github.com/meganide"
+                target="_blank"
+                aria-label="Github"
+                title="Github"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </article>
+            <a href="#contact" area-label="Contact me!"
+              ><button class="button button--secondary">Let's Connect</button></a
+            >
+          </section>
+        </div>
+      </nav>
+
+      <aside class="sidebar-mobile">
+        <ul class="sidebar-mobile__list">
+          <li>
+            <a class="sidebar-mobile__item mobile-hero active-link" href="#hero"
               ><i class="fa-solid fa-house"></i> Home</a
             >
-            <a class="desktop-projects" href="#projects"
+          </li>
+          <li>
+            <a class="sidebar-mobile__item mobile-projects" href="#projects"
               ><i class="fa-solid fa-diagram-project"></i> Projects</a
             >
-            <a class="desktop-skills" href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
-          </section>
-          <article class="nav__desktop-socials">
+          </li>
+          <li>
+            <a class="sidebar-mobile__item mobile-skills" href="#skills"
+              ><i class="fa-solid fa-code"></i> Skills</a
+            >
+          </li>
+          <li>
             <a
+              class="sidebar-mobile__item"
               href="https://se.linkedin.com/in/renas-hassan-9b248b186"
               target="_blank"
-              aria-label="LinkedIn"
-              title="LinkedIn"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-            <a
-              href="https://www.facebook.com/Renash97"
-              target="_blank"
-              aria-label="Facebook"
-              title="Facebook"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-            <a href="https://github.com/meganide" target="_blank" aria-label="Github" title="Github"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </article>
-          <a href="#contact" area-label="Contact me!"
-            ><button class="button button--secondary">Let's Connect</button></a
-          >
-        </section>
-      </div>
-    </nav>
+              ><i class="fa-brands fa-linkedin"></i>LinkedIn</a
+            >
+          </li>
+          <li>
+            <a class="sidebar-mobile__item" href="https://www.facebook.com/Renash97" target="_blank"
+              ><i class="fa-brands fa-facebook"></i> Facebook</a
+            >
+          </li>
+          <li>
+            <a class="sidebar-mobile__item" href="https://github.com/meganide" target="_blank"
+              ><i class="fa-brands fa-github"></i> Github</a
+            >
+          </li>
+          <li>
+            <a class="sidebar-mobile__item mobile-contact" href="#contact"
+              ><i class="fa-solid fa-address-card"></i> Contact</a
+            >
+          </li>
+        </ul>
+      </aside>
 
-    <aside class="sidebar-mobile">
-      <ul class="sidebar-mobile__list">
-        <li>
-          <a class="sidebar-mobile__item mobile-hero active-link" href="#hero"
-            ><i class="fa-solid fa-house"></i> Home</a
-          >
-        </li>
-        <li>
-          <a class="sidebar-mobile__item mobile-projects" href="#projects"
-            ><i class="fa-solid fa-diagram-project"></i> Projects</a
-          >
-        </li>
-        <li>
-          <a class="sidebar-mobile__item mobile-skills" href="#skills"
-            ><i class="fa-solid fa-code"></i> Skills</a
-          >
-        </li>
-        <li>
-          <a
-            class="sidebar-mobile__item"
-            href="https://se.linkedin.com/in/renas-hassan-9b248b186"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin"></i>LinkedIn</a
-          >
-        </li>
-        <li>
-          <a class="sidebar-mobile__item" href="https://www.facebook.com/Renash97" target="_blank"
-            ><i class="fa-brands fa-facebook"></i> Facebook</a
-          >
-        </li>
-        <li>
-          <a class="sidebar-mobile__item" href="https://github.com/meganide" target="_blank"
-            ><i class="fa-brands fa-github"></i> Github</a
-          >
-        </li>
-        <li>
-          <a class="sidebar-mobile__item mobile-contact" href="#contact"
-            ><i class="fa-solid fa-address-card"></i> Contact</a
-          >
-        </li>
-      </ul>
-    </aside>
+      <main>
+        <section class="landing">
+          <img src="./assets/images/background.png" class="background" alt="" />
+          <img src="./assets/images/foreground.png" class="foreground" alt="" />
 
-    <main>
-      <section class="landing">
-        <img src="./assets/images/background.png" class="background" alt="" />
-        <img src="./assets/images/foreground.png" class="foreground" alt="" />
-
-        <div class="hero-container" id="hero">
-          <div class="wrapper">
-            <section class="hero">
-              <section class="hero__left">
-                <section class="hero__heading-background prevent-select">
-                  <h1 class="hero__heading">Hi, I'm Renas!</h1>
+          <div class="hero-container" id="hero">
+            <div class="wrapper">
+              <section class="hero">
+                <section class="hero__left">
+                  <section class="hero__heading-background prevent-select">
+                    <h1 class="hero__heading">Hi, I'm Renas!</h1>
+                  </section>
+                  <div id="typed-strings">
+                    <p>A <span class="hero__fullstack">Fullstack</span> Web Developer</p>
+                    <p>A <span class="hero__frontend">Frontend</span> Web Developer</p>
+                    <p>A <span class="hero__backend">Backend</span> Web Developer</p>
+                    <p>Your <span class="hero__next">Next</span> Colleague</p>
+                  </div>
+                  <div class="typed-container prevent-select">
+                    <span id="typed"></span>
+                  </div>
+                  <p class="hero__paragraph">
+                    A full stack web developer who is passionate about creating beautiful,
+                    functional and responsive websites.
+                  </p>
+                  <a href="#contact" class="hero__contact-btn">
+                    <button class="button hero__button">
+                      Let's Connect <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </a>
                 </section>
-                <div id="typed-strings">
-                  <p>A <span class="hero__fullstack">Fullstack</span> Web Developer</p>
-                  <p>A <span class="hero__frontend">Frontend</span> Web Developer</p>
-                  <p>A <span class="hero__backend">Backend</span> Web Developer</p>
-                  <p>Your <span class="hero__next">Next</span> Colleague</p>
-                </div>
-                <div class="typed-container prevent-select">
-                  <span id="typed"></span>
-                </div>
-                <p class="hero__paragraph">
-                  A full stack web developer who is passionate about creating beautiful, functional
-                  and responsive websites.
-                </p>
-                <a href="#contact" class="hero__contact-btn">
-                  <button class="button hero__button">
-                    Let's Connect <i class="fa-solid fa-arrow-right"></i>
-                  </button>
-                </a>
+                <article class="hero__right">
+                  <img class="hero__astronaut" src="./assets/images/astronaut.svg" alt="" />
+                </article>
               </section>
-              <article class="hero__right">
-                <img class="hero__astronaut" src="./assets/images/astronaut.svg" alt="" />
-              </article>
-            </section>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <div class="container-projects">
-        <div class="wrapper">
-          <section class="projects" id="projects">
-            <h2 class="projects__heading">Projects</h2>
-            <article class="projects__project hidden fromRight">
-              <article class="projects__laptop-mockup">
-                <video disableRemotePlayback muted autoplay loop playsinline>
-                  <source
-                    src="./assets/videos/rsduelmock.webm"
-                    type='video/webm;codecs="vp9"'
-                    onerror="fallback(parentNode);
+        <div class="container-projects">
+          <div class="wrapper">
+            <section class="projects" id="projects">
+              <h2 class="projects__heading">Projects</h2>
+              <article class="projects__project hidden fromRight">
+                <article class="projects__laptop-mockup">
+                  <video disableRemotePlayback muted autoplay loop playsinline>
+                    <source
+                      src="./assets/videos/rsduelmock.webm"
+                      type='video/webm;codecs="vp9"'
+                      onerror="fallback(parentNode);
                   function fallback(video) {;
                     while (video.hasChildNodes()) {
                       if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
@@ -166,51 +186,51 @@
                     }
                     video.parentNode.removeChild(video);
                   }"
-                  />
-                  <img src="./assets/videos/rsduel-ios.png" alt="rsduel" loading="lazy" />
-                </video>
-              </article>
-              <section class="projects__info">
-                <h3 class="projects__title">RS DUEL</h3>
-                <p class="projects__paragraph">
-                  RSDuel is a duel simulator for the popular game Runescape that allows players to
-                  customize their gear and skills and see how they perform against other setups.
-                </p>
-                <section class="all-skills__icons all-skills__icons--small">
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon mongodb">
-                      <img src="./assets/images/icons/mongodb.svg" alt="mongodb" loading="lazy" />
-                    </article>
-                    <p>MongoDB</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon express">
-                      <img src="./assets/images/icons/express.svg" alt="express" loading="lazy" />
-                    </article>
-                    <p>ExpressJS</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon react">
-                      <img src="./assets/images/icons/react.svg" alt="react" loading="lazy" />
-                    </article>
-                    <p>React</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon node">
-                      <img src="./assets/images/icons/node-js.svg" alt="node-js" loading="lazy" />
-                    </article>
-                    <p>NodeJS</p>
+                    />
+                    <img src="./assets/videos/rsduel-ios.png" alt="rsduel" loading="lazy" />
+                  </video>
+                </article>
+                <section class="projects__info">
+                  <h3 class="projects__title">RS DUEL</h3>
+                  <p class="projects__paragraph">
+                    RSDuel is a duel simulator for the popular game Runescape that allows players to
+                    customize their gear and skills and see how they perform against other setups.
+                  </p>
+                  <section class="all-skills__icons all-skills__icons--small">
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon mongodb">
+                        <img src="./assets/images/icons/mongodb.svg" alt="mongodb" loading="lazy" />
+                      </article>
+                      <p>MongoDB</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon express">
+                        <img src="./assets/images/icons/express.svg" alt="express" loading="lazy" />
+                      </article>
+                      <p>ExpressJS</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon react">
+                        <img src="./assets/images/icons/react.svg" alt="react" loading="lazy" />
+                      </article>
+                      <p>React</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon node">
+                        <img src="./assets/images/icons/node-js.svg" alt="node-js" loading="lazy" />
+                      </article>
+                      <p>NodeJS</p>
+                    </section>
                   </section>
                 </section>
-              </section>
-            </article>
-            <article class="projects__project projects__project--reverse hidden fromLeft">
-              <article class="projects__laptop-mockup">
-                <video disableRemotePlayback muted autoplay playsinline>
-                  <source
-                    src="./assets/videos/hnt.webm"
-                    type="video/webm"
-                    onerror="fallback(parentNode);
+              </article>
+              <article class="projects__project projects__project--reverse hidden fromLeft">
+                <article class="projects__laptop-mockup">
+                  <video disableRemotePlayback muted autoplay playsinline>
+                    <source
+                      src="./assets/videos/hnt.webm"
+                      type="video/webm"
+                      onerror="fallback(parentNode);
                     function fallback(video) {;
                   while (video.hasChildNodes()) {
                     if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
@@ -218,38 +238,38 @@
                   }
                   video.parentNode.removeChild(video);
                 }"
-                  />
-                  <img src="./assets/videos/hnt-ios.png" alt="hnt" loading="lazy" />
-                </video>
-              </article>
-              <section class="projects__info projects__info--hnt">
-                <h3 class="projects__title">HNT ANTENNAS</h3>
-                <p class="projects__paragraph">
-                  HNT Antennas is an e-commerce website that sells equipment for mining HNT,
-                  including antennas and accessories. It features a stunning design and was able to
-                  achieve close to 1M SEK in revenue.
-                </p>
-                <section class="all-skills__icons all-skills__icons--small">
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon shopify">
-                      <img src="./assets/images/icons/shopify.svg" alt="shopify" loading="lazy" />
-                    </article>
-                    <p>Shopify</p>
+                    />
+                    <img src="./assets/videos/hnt-ios.png" alt="hnt" loading="lazy" />
+                  </video>
+                </article>
+                <section class="projects__info projects__info--hnt">
+                  <h3 class="projects__title">HNT ANTENNAS</h3>
+                  <p class="projects__paragraph">
+                    HNT Antennas is an e-commerce website that sells equipment for mining HNT,
+                    including antennas and accessories. It features a stunning design and was able
+                    to achieve close to 1M SEK in revenue.
+                  </p>
+                  <section class="all-skills__icons all-skills__icons--small">
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon shopify">
+                        <img src="./assets/images/icons/shopify.svg" alt="shopify" loading="lazy" />
+                      </article>
+                      <p>Shopify</p>
+                    </section>
                   </section>
+                  <a href="https://hntantennas.com/" target="_blank" rel="noopener noreferrer"
+                    ><button class="button">Check it out!</button></a
+                  >
                 </section>
-                <a href="https://hntantennas.com/" target="_blank" rel="noopener noreferrer"
-                  ><button class="button">Check it out!</button></a
-                >
-              </section>
-            </article>
+              </article>
 
-            <article class="projects__project projects__project--enginers hidden fromRight">
-              <article class="projects__laptop-mockup">
-                <video disableRemotePlayback muted autoplay loop playsinline>
-                  <source
-                    src="./assets/videos/engineers2.webm"
-                    type="video/webm"
-                    onerror="fallback(parentNode);
+              <article class="projects__project projects__project--enginers hidden fromRight">
+                <article class="projects__laptop-mockup">
+                  <video disableRemotePlayback muted autoplay loop playsinline>
+                    <source
+                      src="./assets/videos/engineers2.webm"
+                      type="video/webm"
+                      onerror="fallback(parentNode);
                   function fallback(video) {;
                     while (video.hasChildNodes()) {
                       if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
@@ -257,61 +277,61 @@
                     }
                     video.parentNode.removeChild(video);
                   }"
-                  />
-                  <img src="./assets/videos/engineers-ios.png" alt="engineers" loading="lazy" />
-                </video>
-              </article>
-              <section class="projects__info projects__info--engineers">
-                <h3 class="projects__title">ENGINEERS</h3>
-                <p class="projects__paragraph">
-                  I was responsible for rewriting the codebase for Engineers, a course database
-                  utilized by thousands of students each month (10-20k sessions monthly).
-                </p>
-                <section class="all-skills__icons all-skills__icons--small">
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon drive">
-                      <img
-                        src="./assets/images/icons/google-drive.svg"
-                        alt="drive"
-                        loading="lazy"
-                      />
-                    </article>
-                    <p>Drive</p>
+                    />
+                    <img src="./assets/videos/engineers-ios.png" alt="engineers" loading="lazy" />
+                  </video>
+                </article>
+                <section class="projects__info projects__info--engineers">
+                  <h3 class="projects__title">ENGINEERS</h3>
+                  <p class="projects__paragraph">
+                    I was responsible for rewriting the codebase for Engineers, a course database
+                    utilized by thousands of students each month (10-20k sessions monthly).
+                  </p>
+                  <section class="all-skills__icons all-skills__icons--small">
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon drive">
+                        <img
+                          src="./assets/images/icons/google-drive.svg"
+                          alt="drive"
+                          loading="lazy"
+                        />
+                      </article>
+                      <p>Drive</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon express">
+                        <img src="./assets/images/icons/express.svg" alt="express" loading="lazy" />
+                      </article>
+                      <p>ExpressJS</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon react">
+                        <img src="./assets/images/icons/react.svg" alt="react" loading="lazy" />
+                      </article>
+                      <p>React</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon node">
+                        <img src="./assets/images/icons/node-js.svg" alt="node-js" loading="lazy" />
+                      </article>
+                      <p>NodeJS</p>
+                    </section>
                   </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon express">
-                      <img src="./assets/images/icons/express.svg" alt="express" loading="lazy" />
-                    </article>
-                    <p>ExpressJS</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon react">
-                      <img src="./assets/images/icons/react.svg" alt="react" loading="lazy" />
-                    </article>
-                    <p>React</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon node">
-                      <img src="./assets/images/icons/node-js.svg" alt="node-js" loading="lazy" />
-                    </article>
-                    <p>NodeJS</p>
-                  </section>
+                  <a href="https://engineers.nu/" target="_blank" rel="noopener noreferrer">
+                    <button class="button">Check it out!</button>
+                  </a>
                 </section>
-                <a href="https://engineers.nu/" target="_blank" rel="noopener noreferrer">
-                  <button class="button">Check it out!</button>
-                </a>
-              </section>
-            </article>
+              </article>
 
-            <article
-              class="projects__project project__your-project projects__your-project hidden fromLeft"
-            >
-              <article class="projects__laptop-mockup">
-                <video disableRemotePlayback muted autoplay playsinline>
-                  <source
-                    src="./assets/videos/yourproj.webm"
-                    type="video/webm"
-                    onerror="fallback(parentNode);
+              <article
+                class="projects__project project__your-project projects__your-project hidden fromLeft"
+              >
+                <article class="projects__laptop-mockup">
+                  <video disableRemotePlayback muted autoplay playsinline>
+                    <source
+                      src="./assets/videos/yourproj.webm"
+                      type="video/webm"
+                      onerror="fallback(parentNode);
                   function fallback(video) {;
                     while (video.hasChildNodes()) {
                       if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
@@ -319,243 +339,248 @@
                     }
                     video.parentNode.removeChild(video);
                   }"
-                  />
-                  <img src="./assets/videos/yourpj-ios.png" alt="your project" loading="lazy" />
-                </video>
-              </article>
+                    />
+                    <img src="./assets/videos/yourpj-ios.png" alt="your project" loading="lazy" />
+                  </video>
+                </article>
 
-              <section class="projects__info projects__info--project">
-                <h3 class="projects__title">YOUR PROJECT</h3>
-                <p class="projects__paragraph">
-                  Are you looking for a dedicated and skilled professional to join your team or help
-                  with your next project? Look no further!
-                </p>
-                <a href="#contact"><button class="button">Contact Me</button></a>
-              </section>
-            </article>
-            <!-- <button class="button button--secondary projects__view-all">View All Projects</button> -->
-          </section>
-        </div>
-      </div>
-
-      <div class="container-skills">
-        <div class="wrapper">
-          <section class="skills" id="skills">
-            <h2 class="skills__heading">Skills</h2>
-
-            <section class="all-skills">
-              <article class="all-skills__skill all-skills__skill--frontend hidden fromRight">
-                <header class="all-skills__header">
-                  <h3>Frontend</h3>
-                </header>
-                <section class="all-skills__icons">
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon html5">
-                      <img src="./assets/images/icons/html.svg" alt="html" loading="lazy" />
-                    </article>
-                    <p>HTML5</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon css">
-                      <img src="./assets/images/icons/css3.svg" alt="css" loading="lazy" />
-                    </article>
-                    <p>CSS3</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon js">
-                      <img
-                        src="./assets/images/icons/javascript.svg"
-                        alt="javascript"
-                        loading="lazy"
-                      />
-                    </article>
-                    <p>Javascript</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon react">
-                      <img src="./assets/images/icons/react.svg" alt="react" loading="lazy" />
-                    </article>
-                    <p>React</p>
-                  </section>
+                <section class="projects__info projects__info--project">
+                  <h3 class="projects__title">YOUR PROJECT</h3>
+                  <p class="projects__paragraph">
+                    Are you looking for a dedicated and skilled professional to join your team or
+                    help with your next project? Look no further!
+                  </p>
+                  <a href="#contact"><button class="button">Contact Me</button></a>
                 </section>
               </article>
-              <article class="all-skills__skill all-skills__skill--backend hidden fromRight">
-                <header>
-                  <h3>Backend</h3>
-                </header>
-                <section class="all-skills__icons">
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon node">
-                      <img src="./assets/images/icons/node-js.svg" alt="node" loading="lazy" />
-                    </article>
-                    <p>NodeJS</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon express">
-                      <img src="./assets/images/icons/express.svg" alt="express" loading="lazy" />
-                    </article>
-                    <p>ExpressJS</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon mysql">
-                      <img src="./assets/images/icons/mysql.svg" alt="mysql" loading="lazy" />
-                    </article>
-                    <p>MySQL</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon mongodb">
-                      <img src="./assets/images/icons/mongodb.svg" alt="mongodb" loading="lazy" />
-                    </article>
-                    <p>MongoDB</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon graphql">
-                      <img src="./assets/images/icons/graphql.svg" alt="graphql" loading="lazy" />
-                    </article>
-                    <p>GraphQL</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon api">
-                      <img src="./assets/images/icons/api.svg" alt="api" loading="lazy" />
-                    </article>
-                    <p>REST API</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon auth">
-                      <img src="./assets/images/icons/auth.svg" alt="auth" loading="lazy" />
-                    </article>
-                    <p>Auth</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon socket">
-                      <img src="./assets/images/icons/socket.svg" alt="socket" loading="lazy" />
-                    </article>
-                    <p>Socket.IO</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon firebase">
-                      <img src="./assets/images/icons/firebase.svg" alt="firebase" loading="lazy" />
-                    </article>
-                    <p>Firebase</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon python">
-                      <img src="./assets/images/icons/python.svg" alt="python" loading="lazy" />
-                    </article>
-                    <p>Python</p>
-                  </section>
-                </section>
-              </article>
-              <article class="all-skills__skill all-skills__skill--other hidden fromRight">
-                <header>
-                  <h3>Other</h3>
-                </header>
-                <section class="all-skills__icons">
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon ts">
-                      <img
-                        src="./assets/images/icons/typescript.svg"
-                        alt="typescript"
-                        loading="lazy"
-                      />
-                    </article>
-                    <p>Typescript</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon git">
-                      <img src="./assets/images/icons/git.svg" alt="git" loading="lazy" />
-                    </article>
-                    <p>Git</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon github">
-                      <img src="./assets/images/icons/github.svg" alt="github" loading="lazy" />
-                    </article>
-                    <p>Github</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon jest">
-                      <img src="./assets/images/icons/jest.svg" alt="jest" loading="lazy" />
-                    </article>
-                    <p>Jest</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon postman">
-                      <img src="./assets/images/icons/postman.svg" alt="postman" loading="lazy" />
-                    </article>
-                    <p>Postman</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon aws">
-                      <img src="./assets/images/icons/aws.svg" alt="aws" loading="lazy" />
-                    </article>
-                    <p>EC2 & RDS</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon heroku">
-                      <img src="./assets/images/icons/heroku.svg" alt="heroku" loading="lazy" />
-                    </article>
-                    <p>Heroku</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon netlify">
-                      <img src="./assets/images/icons/netlify.svg" alt="netlify" loading="lazy" />
-                    </article>
-                    <p>Netlify</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon photoshop">
-                      <img
-                        src="./assets/images/icons/adobe-photoshop.svg"
-                        alt="photoshop"
-                        loading="lazy"
-                      />
-                    </article>
-                    <p>Photoshop</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon shopify">
-                      <img src="./assets/images/icons/shopify.svg" alt="shopify" loading="lazy" />
-                    </article>
-                    <p>Shopify</p>
-                  </section>
-                </section>
-              </article>
+              <!-- <button class="button button--secondary projects__view-all">View All Projects</button> -->
             </section>
-          </section>
+          </div>
         </div>
-      </div>
 
-      <div class="container-contact">
-        <div class="wrapper">
-          <section class="contact hidden" id="contact">
-            <h2 class="contact__heading">Contact</h2>
-            <form class="contact__form" id="sendForm">
-              <input type="text" name="name" id="name" placeholder="Name" />
-              <input type="email" name="email" id="email" placeholder="Email" required />
-              <textarea
-                id="message"
-                name="message"
-                cols="10"
-                rows="10"
-                placeholder="Message"
-                required
-              ></textarea>
-              <input type="submit" id="sendButton" class="button button--contact" value="Send" />
-              <aside id="form__info" class="hide">
-                <p id="form__popup-txt">Email successfully sent!</p>
-              </aside>
-            </form>
-          </section>
+        <div class="container-skills">
+          <div class="wrapper">
+            <section class="skills" id="skills">
+              <h2 class="skills__heading">Skills</h2>
+
+              <section class="all-skills">
+                <article class="all-skills__skill all-skills__skill--frontend hidden fromRight">
+                  <header class="all-skills__header">
+                    <h3>Frontend</h3>
+                  </header>
+                  <section class="all-skills__icons">
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon html5">
+                        <img src="./assets/images/icons/html.svg" alt="html" loading="lazy" />
+                      </article>
+                      <p>HTML5</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon css">
+                        <img src="./assets/images/icons/css3.svg" alt="css" loading="lazy" />
+                      </article>
+                      <p>CSS3</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon js">
+                        <img
+                          src="./assets/images/icons/javascript.svg"
+                          alt="javascript"
+                          loading="lazy"
+                        />
+                      </article>
+                      <p>Javascript</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon react">
+                        <img src="./assets/images/icons/react.svg" alt="react" loading="lazy" />
+                      </article>
+                      <p>React</p>
+                    </section>
+                  </section>
+                </article>
+                <article class="all-skills__skill all-skills__skill--backend hidden fromRight">
+                  <header>
+                    <h3>Backend</h3>
+                  </header>
+                  <section class="all-skills__icons">
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon node">
+                        <img src="./assets/images/icons/node-js.svg" alt="node" loading="lazy" />
+                      </article>
+                      <p>NodeJS</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon express">
+                        <img src="./assets/images/icons/express.svg" alt="express" loading="lazy" />
+                      </article>
+                      <p>ExpressJS</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon mysql">
+                        <img src="./assets/images/icons/mysql.svg" alt="mysql" loading="lazy" />
+                      </article>
+                      <p>MySQL</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon mongodb">
+                        <img src="./assets/images/icons/mongodb.svg" alt="mongodb" loading="lazy" />
+                      </article>
+                      <p>MongoDB</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon graphql">
+                        <img src="./assets/images/icons/graphql.svg" alt="graphql" loading="lazy" />
+                      </article>
+                      <p>GraphQL</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon api">
+                        <img src="./assets/images/icons/api.svg" alt="api" loading="lazy" />
+                      </article>
+                      <p>REST API</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon auth">
+                        <img src="./assets/images/icons/auth.svg" alt="auth" loading="lazy" />
+                      </article>
+                      <p>Auth</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon socket">
+                        <img src="./assets/images/icons/socket.svg" alt="socket" loading="lazy" />
+                      </article>
+                      <p>Socket.IO</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon firebase">
+                        <img
+                          src="./assets/images/icons/firebase.svg"
+                          alt="firebase"
+                          loading="lazy"
+                        />
+                      </article>
+                      <p>Firebase</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon python">
+                        <img src="./assets/images/icons/python.svg" alt="python" loading="lazy" />
+                      </article>
+                      <p>Python</p>
+                    </section>
+                  </section>
+                </article>
+                <article class="all-skills__skill all-skills__skill--other hidden fromRight">
+                  <header>
+                    <h3>Other</h3>
+                  </header>
+                  <section class="all-skills__icons">
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon ts">
+                        <img
+                          src="./assets/images/icons/typescript.svg"
+                          alt="typescript"
+                          loading="lazy"
+                        />
+                      </article>
+                      <p>Typescript</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon git">
+                        <img src="./assets/images/icons/git.svg" alt="git" loading="lazy" />
+                      </article>
+                      <p>Git</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon github">
+                        <img src="./assets/images/icons/github.svg" alt="github" loading="lazy" />
+                      </article>
+                      <p>Github</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon jest">
+                        <img src="./assets/images/icons/jest.svg" alt="jest" loading="lazy" />
+                      </article>
+                      <p>Jest</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon postman">
+                        <img src="./assets/images/icons/postman.svg" alt="postman" loading="lazy" />
+                      </article>
+                      <p>Postman</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon aws">
+                        <img src="./assets/images/icons/aws.svg" alt="aws" loading="lazy" />
+                      </article>
+                      <p>EC2 & RDS</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon heroku">
+                        <img src="./assets/images/icons/heroku.svg" alt="heroku" loading="lazy" />
+                      </article>
+                      <p>Heroku</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon netlify">
+                        <img src="./assets/images/icons/netlify.svg" alt="netlify" loading="lazy" />
+                      </article>
+                      <p>Netlify</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon photoshop">
+                        <img
+                          src="./assets/images/icons/adobe-photoshop.svg"
+                          alt="photoshop"
+                          loading="lazy"
+                        />
+                      </article>
+                      <p>Photoshop</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon shopify">
+                        <img src="./assets/images/icons/shopify.svg" alt="shopify" loading="lazy" />
+                      </article>
+                      <p>Shopify</p>
+                    </section>
+                  </section>
+                </article>
+              </section>
+            </section>
+          </div>
         </div>
-      </div>
-    </main>
 
-    <script src="https://kit.fontawesome.com/8bb946769b.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
+        <div class="container-contact">
+          <div class="wrapper">
+            <section class="contact hidden" id="contact">
+              <h2 class="contact__heading">Contact</h2>
+              <form class="contact__form" id="sendForm">
+                <input type="text" name="name" id="name" placeholder="Name" />
+                <input type="email" name="email" id="email" placeholder="Email" required />
+                <textarea
+                  id="message"
+                  name="message"
+                  cols="10"
+                  rows="10"
+                  placeholder="Message"
+                  required
+                ></textarea>
+                <input type="submit" id="sendButton" class="button button--contact" value="Send" />
+                <aside id="form__info" class="hide">
+                  <p id="form__popup-txt">Email successfully sent!</p>
+                </aside>
+              </form>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <script src="https://kit.fontawesome.com/8bb946769b.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+      ></script>
+    </div>
   </body>
 </html>
