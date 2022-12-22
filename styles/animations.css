@@ -56,6 +56,22 @@
   transition-delay: 1200ms;
 }
 
+.link:nth-child(9) {
+  transition-delay: 1350ms;
+}
+
+.link:nth-child(10) {
+  transition-delay: 1500ms;
+}
+
+.link:nth-child(11) {
+  transition-delay: 1650ms;
+}
+
+.link:nth-child(12) {
+  transition-delay: 1800ms;
+}
+
 .show {
   opacity: 1;
   filter: blur(0);
