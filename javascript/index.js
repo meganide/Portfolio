@@ -8,13 +8,13 @@ import './animations.js';
 import { load } from "./load.js";
 
 async function main() {
-  await load()
   cursor();
   showSidebar();
-  typeAnimation();
   intersectionObserver();
   parallaxHero();
   emailjs.init('o0DRfkiQeGWH3r1F5');
+  await load()
+  typeAnimation();
 }
 
 main();
