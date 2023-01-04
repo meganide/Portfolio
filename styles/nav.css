@@ -71,8 +71,8 @@
   display: block;
   padding: 24px 0;
   text-decoration: none;
-  display: flex;
-  gap: 32px;
+  display: grid;
+  grid-template-columns: 4.6875rem 1fr;
 }
 
 .sidebar-mobile__item:hover {
