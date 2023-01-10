@@ -111,6 +111,45 @@ video {
   height: 50px;
 }
 
+.projects__demo-acc {
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: .5rem;
+  background-color: rgba(48, 55, 87, 0.459);
+  user-select: auto;
+  text-align: center;
+}
+
+.projects__demo-acc:hover {
+  background-color: rgba(30, 35, 56, 0.459);
+}
+
+details {
+  user-select: none;
+}
+
+details>summary span {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s;
+  margin-right: 0.2rem;
+}
+
+
+details[open] summary span {
+  transform: rotate(180deg);
+}
+
+summary {
+  display: flex;
+  cursor: pointer;
+  color: rgb(207, 207, 207);
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
 .projects__buttons {
   display: flex;
   gap: 1rem;

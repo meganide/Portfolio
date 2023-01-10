@@ -73,7 +73,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-color: #0C1444;
-  cursor: url(../assets/images/cursor.png), auto;
+  /* cursor: url(../assets/images/cursor.png), auto; */
 }
 
 h1,
@@ -126,7 +126,7 @@ img {
 }
 
 
-.cursor {
+/* .cursor {
   display: none;
   position: fixed;
   width: 40px;
@@ -160,7 +160,7 @@ img {
 
 .click {
   animation: click 0.3s ease-in-out;
-}
+} */
 
 
 
@@ -219,11 +219,11 @@ img {
 
 
 
-a:hover~.cursor,
+/* a:hover~.cursor,
 button:hover~.cursor {
   transform: scale(6);
-}
-
+} */
+/* 
 @media screen and (min-width: 1200px) {
   *,
 *::after,
@@ -238,4 +238,4 @@ button:hover {
 .cursor {
   display: block;
 }
-}
+} */
