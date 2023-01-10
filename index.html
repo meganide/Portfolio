@@ -42,46 +42,63 @@
             </aside>
           </section>
 
-        <section class="nav__desktop">
-          <aside>
-            <a href="#hero"><img class="nav__img link hidden fromTop" src="./assets/images/logo2.png" alt="logo" /></a>
-          </aside>
-          <section class="nav__desktop-links">
-            <a class="desktop-hero active-link link hidden fromTop" href="#hero"
-              ><i class="fa-solid fa-house"></i> Home</a
-            >
-            <a class="desktop-projects link hidden fromTop" href="#projects"
-              ><i class="fa-solid fa-diagram-project"></i> Projects</a
-            >
-            <a class="desktop-skills link hidden fromTop" href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
-          </section>
-          <article class="nav__desktop-socials">
-            <a
-            class="link hidden fromTop"
-              href="https://se.linkedin.com/in/renas-hassan-9b248b186"
-              target="_blank"
-              aria-label="LinkedIn"
-              title="LinkedIn"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
+          <section class="nav__desktop">
+            <aside>
+              <a href="#hero"
+                ><img
+                  class="nav__img link hidden fromTop"
+                  src="./assets/images/logo2.png"
+                  alt="logo"
+              /></a>
+            </aside>
+            <section class="nav__desktop-links">
+              <a class="desktop-hero active-link link hidden fromTop" href="#hero"
+                ><i class="fa-solid fa-house"></i> Home</a
+              >
+              <a class="desktop-projects link hidden fromTop" href="#projects"
+                ><i class="fa-solid fa-diagram-project"></i> Projects</a
+              >
+              <a class="desktop-skills link hidden fromTop" href="#skills"
+                ><i class="fa-solid fa-code"></i> Skills</a
+              >
+            </section>
+            <article class="nav__desktop-socials">
+              <a
+                class="link hidden fromTop"
+                href="https://se.linkedin.com/in/renas-hassan-9b248b186"
+                target="_blank"
+                aria-label="LinkedIn"
+                title="LinkedIn"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                class="link hidden fromTop"
+                href="https://www.facebook.com/Renash97"
+                target="_blank"
+                aria-label="Facebook"
+                title="Facebook"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                class="link hidden fromTop"
+                href="https://github.com/meganide"
+                target="_blank"
+                aria-label="Github"
+                title="Github"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </article>
             <a
               class="link hidden fromTop"
-              href="https://www.facebook.com/Renash97"
+              href="./assets/cv.pdf"
+              area-label="Resume"
+              title="Resume"
               target="_blank"
-              aria-label="Facebook"
-              title="Facebook"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-            <a class="link hidden fromTop" href="https://github.com/meganide" target="_blank" aria-label="Github" title="Github"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </article>
-          <a class="link hidden fromTop" href="./assets/cv.pdf" area-label="Resume" title="Resume" target="_blank"
-            ><button class="button button--secondary link hidden fromTop">Resume</button></a
-          >
-        </section>
-      </div>
-    </nav>
+              ><button class="button button--secondary link hidden fromTop">Resume</button></a
+            >
+          </section>
+        </div>
+      </nav>
 
       <aside class="sidebar-mobile">
         <ul class="sidebar-mobile__list">
@@ -176,9 +193,9 @@
               <h2 class="projects__heading">Projects</h2>
               <article class="projects__project hidden fromRight">
                 <article class="projects__laptop-mockup">
-                  <video disableRemotePlayback muted autoplay loop playsinline>
+                  <video disableRemotePlayback muted autoplay playsinline>
                     <source
-                      src="./assets/videos/rsduelmock.webm"
+                      src="./assets/videos/chatify.webm"
                       type='video/webm;codecs="vp9"'
                       onerror="fallback(parentNode);
                   function fallback(video) {;
@@ -189,27 +206,25 @@
                     video.parentNode.removeChild(video);
                   }"
                     />
-                    <img src="./assets/videos/rsduel-ios.png" alt="rsduel" loading="lazy" />
+                    <img src="./assets/videos/chatify-ios.png" alt="rsduel" loading="lazy" />
                   </video>
                 </article>
                 <section class="projects__info">
-                  <h3 class="projects__title">RS DUEL</h3>
+                  <h3 class="projects__title">CHATIFY</h3>
                   <p class="projects__paragraph">
-                    RSDuel is a duel simulator for the popular game Runescape that allows players to
-                    customize their gear and skills and see how they perform against other setups.
+                    Chatify is a full-stack chat application which allows real-time communcation
+                    between users similar to Discord.
                   </p>
                   <section class="all-skills__icons all-skills__icons--small">
                     <section class="all-skills__container">
-                      <article class="all-skills__icon mongodb">
-                        <img src="./assets/images/icons/mongodb.svg" alt="mongodb" loading="lazy" />
+                      <article class="all-skills__icon ts">
+                        <img
+                          src="./assets/images/icons/typescript.svg"
+                          alt="typescript"
+                          loading="lazy"
+                        />
                       </article>
-                      <p>MongoDB</p>
-                    </section>
-                    <section class="all-skills__container">
-                      <article class="all-skills__icon express">
-                        <img src="./assets/images/icons/express.svg" alt="express" loading="lazy" />
-                      </article>
-                      <p>ExpressJS</p>
+                      <p>Typescript</p>
                     </section>
                     <section class="all-skills__container">
                       <article class="all-skills__icon react">
@@ -218,11 +233,37 @@
                       <p>React</p>
                     </section>
                     <section class="all-skills__container">
+                      <article class="all-skills__icon mysql">
+                        <img src="./assets/images/icons/mysql.svg" alt="mysql" loading="lazy" />
+                      </article>
+                      <p>MySQL</p>
+                    </section>
+                    <section class="all-skills__container">
                       <article class="all-skills__icon node">
                         <img src="./assets/images/icons/node-js.svg" alt="node-js" loading="lazy" />
                       </article>
                       <p>NodeJS</p>
                     </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon express">
+                        <img src="./assets/images/icons/express.svg" alt="express" loading="lazy" />
+                      </article>
+                      <p>ExpressJS</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon socket">
+                        <img src="./assets/images/icons/socket.svg" alt="socket" loading="lazy" />
+                      </article>
+                      <p>Socket.IO</p>
+                    </section>
+                  </section>
+                  <section class="projects__buttons">
+                    <a href="https://chatify-k8cb.onrender.com/login" target="_blank" rel="noopener noreferrer">
+                      <button class="button">Demo</button>
+                    </a>
+                    <a href="https://github.com/meganide/chat-app" target="_blank" rel="noopener noreferrer">
+                      <button class="button">Code</button>
+                    </a>
                   </section>
                 </section>
               </article>

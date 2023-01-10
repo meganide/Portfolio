@@ -111,6 +111,15 @@ video {
   height: 50px;
 }
 
+.projects__buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.projects__buttons button {
+  width: 5.125rem;
+}
+
 .laptop-engineers {
   position: relative !important;
 }
