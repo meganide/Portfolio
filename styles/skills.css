@@ -109,8 +109,12 @@
   background-color: rgb(68,168,179, 0.2);
 }
 
+.sass {
+  background-color: rgb(207,100,154, 0.2);
+}
+
 .styled-components {
-  background-color: rgb(246,9,93, 0.2);
+  background-color: rgb(255,204,128, 0.2);
 }
 
 .react-query {
