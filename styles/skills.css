@@ -109,6 +109,14 @@
   background-color: rgb(68,168,179, 0.2);
 }
 
+.styled-components {
+  background-color: rgb(246,9,93, 0.2);
+}
+
+.react-query {
+  background-color: rgb(255,217,76, 0.2);
+}
+
 .node {
   background-color: rgb(85, 195, 226, 0.2);
 }
