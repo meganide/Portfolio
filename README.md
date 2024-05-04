@@ -1,5 +1,8 @@
-You are free to use this portfolio as your own and modify it as you wish.
+# Live version
+https://renas.se/
 
+# License
+You are free to use this portfolio as your own and modify it as you wish.
 Good luck on the job hunt!
 
 # Support
