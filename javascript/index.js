@@ -12,7 +12,7 @@ async function main() {
   showSidebar();
   intersectionObserver();
   parallaxHero();
-  emailjs.init('o0DRfkiQeGWH3r1F5');
+  emailjs.init(); // add ur own key here from emailjs
   await load()
   typeAnimation();
 }
